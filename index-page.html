@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L.L. Kirchner — Historical Crime Fiction & Memoirs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://assets.flodesk.com/universal.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --cream: #f5f2eb; --dark: #1a1a1a; --pink: #c0395b; --gold: #8b6914; }
+    body { background: var(--cream); color: var(--dark); font-family: 'Lato', sans-serif; font-size: 1rem; line-height: 1.6; }
+
+    nav { background: var(--cream); border-bottom: 1px solid #ddd; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--pink); text-decoration: none; letter-spacing: 2px; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--dark); font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--pink); }
+    .nav-social { display: flex; gap: 1rem; align-items: center; }
+    .nav-social a { color: var(--dark); transition: color 0.2s; }
+    .nav-social a:hover { color: var(--pink); }
+    .nav-social svg { width: 18px; height: 18px; fill: currentColor; }
+
+    .hero { padding: 5rem 2rem 3rem; text-align: center; max-width: 900px; margin: 0 auto; }
+    .hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 8vw, 6rem); line-height: 1; color: var(--dark); letter-spacing: 2px; }
+    .hero p { margin-top: 1.5rem; font-size: 1.1rem; max-width: 680px; margin-left: auto; margin-right: auto; color: #444; }
+
+    .trilogy-box { max-width: 860px; margin: 3rem auto; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
+    .trilogy-image { width: 100%; height: 380px; background-image: url('https://raw.githubusercontent.com/llkirchner/site/main/QPC%20OMNI%20FINAL'); background-size: cover; background-position: center top; }
+    .trilogy-cta { padding: 1.5rem; text-align: center; }
+
+    .btn { display: inline-block; padding: 12px 32px; border-radius: 30px; font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; transition: all 0.25s; }
+    .btn-dark { background: var(--dark); color: white; }
+    .btn-dark:hover { background: var(--gold); }
+    .btn-pink { background: var(--pink); color: white; }
+    .btn-pink:hover { background: #a02e4d; }
+
+    .book-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .book-item { border-radius: 10px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: transform 0.3s, box-shadow 0.3s; display: block; text-decoration: none; }
+    .book-item:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(0,0,0,0.22); }
+    .book-item img { width: 100%; height: auto; display: block; }
+
+    .section-heading { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 6vw, 4.5rem); letter-spacing: 2px; text-align: center; color: var(--dark); margin-bottom: 2rem; }
+
+    .memoirs-section { background: white; padding: 4rem 2rem; }
+    .memoir-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; max-width: 800px; margin: 0 auto; }
+    .memoir-card { border-radius: 10px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
+    .memoir-card img { width: 100%; height: 320px; object-fit: cover; object-position: top; display: block; }
+    .memoir-info { padding: 1.25rem; text-align: center; background: white; }
+    .memoir-info h4 { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: 1px; color: var(--dark); margin-bottom: 0.5rem; }
+    .memoir-info p { font-size: 0.9rem; color: #555; margin-bottom: 1rem; }
+
+    .bio-section { max-width: 700px; margin: 4rem auto; padding: 0 2rem; text-align: center; }
+    .bio-section h2 { margin-bottom: 1.5rem; }
+    .bio-section p { color: #444; font-size: 1rem; }
+    .bio-section p em { font-style: italic; }
+
+    .form-section { background: var(--dark); color: white; padding: 4rem 2rem; text-align: center; }
+    .form-section h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 0.75rem; color: white; }
+    .form-section p { color: #ccc; margin-bottom: 2rem; }
+
+    footer { background: var(--cream); border-top: 1px solid #ddd; padding: 2rem; text-align: center; font-size: 0.85rem; color: #888; }
+    footer .footer-social { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; }
+    footer .footer-social a { color: var(--dark); transition: color 0.2s; }
+    footer .footer-social a:hover { color: var(--pink); }
+    footer svg { width: 20px; height: 20px; fill: currentColor; }
+
+    @media (max-width: 700px) {
+      .nav-links { display: none; }
+      .book-grid { grid-template-columns: 1fr; }
+      .memoir-grid { grid-template-columns: 1fr; }
+      .trilogy-image { height: 220px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="/">L.L. Kirchner</a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/books.html">Books</a></li>
+    <li><a href="/bio.html">About</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-social">
+    <a href="https://facebook.com/llkirchner" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+    <a href="https://instagram.com/llkirchner_" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="var(--cream)"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="var(--cream)" stroke-width="2"/></svg></a>
+    <a href="https://tiktok.com/@llkirchner" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg></a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>You Want Immersive,<br>Page-Turning Reads?<br>You're In The Right Place</h1>
+  <p>When a beauty contest becomes a fight for survival, these extraordinary women discover that sisterhood is the deadliest weapon in <em>The Queenpin Chronicles.</em> Follow a troupe of swimsuit models out of Florida on a war bond tour as they take on the mafia in Vegas, pre-Revolutionary Havana, and 1978 Miami.</p>
+</section>
+
+<div style="max-width:860px;margin:0 auto;padding:0 2rem;">
+  <div class="trilogy-box">
+    <div class="trilogy-image"></div>
+    <div class="trilogy-cta">
+      <a href="https://www.amazon.com/dp/B0CVR16Q4F" class="btn btn-dark">Order The Complete Trilogy Here!</a>
+    </div>
+  </div>
+
+  <div class="book-grid" style="margin-bottom:4rem;">
+    <a href="https://books2read.com/u/mdY2yl" class="book-item">
+      <img src="https://raw.githubusercontent.com/llkirchner/site/main/FG%20Cover%20SM%20JH%20BLURB.jpg" alt="Florida Girls">
+    </a>
+    <a href="https://books2read.com/u/3Jlrge" class="book-item">
+      <img src="https://raw.githubusercontent.com/llkirchner/site/main/VG%20final" alt="Vegas Girls">
+    </a>
+    <a href="https://books2read.com/u/4NWaeG" class="book-item">
+      <img src="https://raw.githubusercontent.com/llkirchner/site/main/HG%20EBOOK%20COVER%20FIN.jpg" alt="Havana Girls">
+    </a>
+  </div>
+</div>
+
+<section class="memoirs-section">
+  <h2 class="section-heading">My Memoirs</h2>
+  <div class="memoir-grid">
+    <div class="memoir-card">
+      <img src="https://raw.githubusercontent.com/llkirchner/site/main/5.25%20ALC%20COVER.png" alt="American Lady Creature">
+      <div class="memoir-info">
+        <h4>American Lady Creature</h4>
+        <p>A darkly comedic memoir of transformation after divorce and early menopause in Qatar. A journey from seeking approval to self-love.</p>
+        <a href="https://books2read.com/u/3Ldoe1" class="btn btn-dark">Buy Here</a>
+      </div>
+    </div>
+    <div class="memoir-card">
+      <img src="https://raw.githubusercontent.com/llkirchner/site/main/BT%20final" alt="Blissful Thinking">
+      <div class="memoir-info">
+        <h4>Blissful Thinking</h4>
+        <p>From yoga retreats to a sex cult—one woman's spiritual journey to find healing after heartbreak. A search for radical honesty.</p>
+        <a href="https://books2read.com/u/3LzB8J" class="btn btn-dark">Buy Here</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bio-section">
+  <h2 class="section-heading">Who Am I To Write About Rebellious Women?</h2>
+  <p>I've been a journalist, a story coach, an award-winning screenwriter, and even an on-air host for the Home Shopping Network. My life and work as an expat in Asia became the basis of two memoirs. My writing has appeared in <em>The Washington Post</em>, <em>Salon</em>, and <em>The Rumpus</em> among numerous other outlets. I live in Florida with my favorite husband and our best boy, Hartley.🐾</p>
+  <br>
+  <a href="/bio.html" class="btn btn-pink" style="margin-top:1rem;">Read Full Bio</a>
+</section>
+
+<section class="form-section">
+  <h2>Get The Story That Started It All</h2>
+  <p>Meet the woman who walked away from everything—and started an empire.</p>
+  <div id="fd-form-6921a4dab4a6c94096b1d31a"></div>
+  <script>
+    window.fd('form', {
+      formId: '6921a4dab4a6c94096b1d31a',
+      containerEl: '#fd-form-6921a4dab4a6c94096b1d31a'
+    });
+  </script>
+</section>
+
+<footer>
+  <div class="footer-social">
+    <a href="https://facebook.com/llkirchner" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+    <a href="https://instagram.com/llkirchner_" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="var(--cream)"/></svg></a>
+    <a href="https://tiktok.com/@llkirchner" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg></a>
+  </div>
+  <p>© 2026 L.L. Kirchner. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — L.L. Kirchner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --cream: #f5f2eb; --dark: #1a1a1a; --pink: #c0395b; --gold: #8b6914; }
+    body { background: var(--cream); color: var(--dark); font-family: 'Lato', sans-serif; }
+
+    nav { background: var(--cream); border-bottom: 1px solid #ddd; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--pink); text-decoration: none; letter-spacing: 2px; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--dark); font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--pink); }
+
+    .bio-wrap { max-width: 800px; margin: 5rem auto; padding: 0 2rem; }
+    h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 7vw, 4.5rem); letter-spacing: 2px; margin-bottom: 2.5rem; color: var(--dark); }
+
+    .bio-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: start; }
+    .bio-photo img { width: 100%; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+    .bio-text p { font-size: 1rem; line-height: 1.75; color: #333; margin-bottom: 1.25rem; }
+    .bio-text p em { font-style: italic; }
+
+    .press-logos { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd; }
+    .press-logos p { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 2px; color: #888; margin-bottom: 1rem; text-align: center; }
+    .press-list { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .press-list span { font-style: italic; font-size: 0.95rem; color: #555; padding: 6px 16px; border: 1px solid #ccc; border-radius: 20px; }
+
+    footer { border-top: 1px solid #ddd; padding: 2rem; text-align: center; font-size: 0.85rem; color: #888; margin-top: 4rem; }
+
+    @media (max-width: 650px) {
+      .bio-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="/">L.L. Kirchner</a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/books.html">Books</a></li>
+    <li><a href="/bio.html" class="active">About</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="bio-wrap">
+  <h1>Who Am I To Write About Rebellious Women?</h1>
+  <div class="bio-grid">
+    <div class="bio-photo">
+      <img src="https://raw.githubusercontent.com/llkirchner/site/main/L.L.%20Kirchner%20Author%20Headshot.JPG" alt="L.L. Kirchner">
+    </div>
+    <div class="bio-text">
+      <p>I've been a journalist, a story coach, an award-winning screenwriter, and even an on-air host for the Home Shopping Network.</p>
+      <p>My life and work as an expat in Asia became the basis of two memoirs — and that was after I was the religion editor for an LGBTQIA+ paper, the dating columnist for an alt newsweekly, and the bridal editor for a society rag… all at the same time.</p>
+      <p>My writing has appeared in <em>The Washington Post</em>, <em>Salon</em>, and <em>The Rumpus</em> among numerous other outlets.</p>
+      <p>I live in Florida with my favorite husband and our best boy, Hartley.🐾</p>
+    </div>
+  </div>
+  <div class="press-logos">
+    <p>As Seen In</p>
+    <div class="press-list">
+      <span>The Washington Post</span>
+      <span>Salon</span>
+      <span>The Rumpus</span>
+      <span>Bustle</span>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 L.L. Kirchner. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
