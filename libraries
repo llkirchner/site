@@ -1,141 +1,179 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Request at Your Library — L.L. Kirchner</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-```
-body {
-  background: #f5f2eb;
-  color: #222;
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  line-height: 1.7;
-}
+    body {
+      background: #f5f2eb;
+      color: #222;
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
 
-/* ── NAV ── */
-nav {
-  background: #f5f2eb;
-  padding: 1.2rem 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  border-bottom: 1px solid #ddd;
-}
-nav a {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #222;
-  text-decoration: none;
-}
-nav a:hover { color: #c0395b; }
+    /* NAV */
+    nav {
+      background: #f5f2eb;
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap;
+    }
 
-/* ── HERO HEADLINE ── */
-.hero {
-  text-align: center;
-  padding: 3rem 1.5rem 1.5rem;
-}
-.hero h1 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(3rem, 10vw, 6rem);
-  color: #222;
-  line-height: 1.0;
-  margin-bottom: 1rem;
-}
-.hero p {
-  font-size: 1.15rem;
-  max-width: 600px;
-  margin: 0 auto 0.5rem;
-  color: #444;
-}
-.hero p em { font-style: italic; }
-.hero p strong { font-weight: 700; }
+    nav a {
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #222;
+      text-decoration: none;
+    }
 
-/* ── MAIN CONTENT ── */
-.content {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem 4rem;
-}
+    nav a:hover {
+      color: #c0395b;
+    }
 
-/* ── SECTION HEADINGS ── */
-h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2rem;
-  color: #c0395b;
-  margin: 2.5rem 0 0.75rem;
-  letter-spacing: 0.05em;
-}
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 3rem 1.5rem 1.5rem;
+    }
 
-/* ── HOW TO REQUEST ── */
-.how-to ol {
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-.how-to ol li {
-  margin-bottom: 0.5rem;
-}
+    .hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3rem, 10vw, 6rem);
+      color: #222;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
 
-/* ── BOOK DETAILS ── */
-.books {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 1rem;
-  justify-content: center;
-}
-.book-card {
-  flex: 1 1 180px;
-  max-width: 220px;
-  text-align: center;
-}
-.book-card img {
-  width: 100%;
-  border-radius: 4px;
-  display: block;
-  margin-bottom: 0.6rem;
-}
-.book-card p {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  text-align: left;
-}
-.book-card strong { font-weight: 700; }
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 600px;
+      margin: 0 auto 0.5rem;
+      color: #444;
+    }
 
-/* ── LIBRARY LISTS ── */
-.library-section { margin-top: 0.5rem; }
-h3 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.6rem;
-  color: #222;
-  margin: 2rem 0 0.5rem;
-  letter-spacing: 0.05em;
-}
-ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-}
-ul li { margin-bottom: 0.4rem; }
-ul li a {
-  color: #222;
-  text-decoration: underline;
-}
-ul li a:hover { color: #c0395b; }
+    .hero p em {
+      font-style: italic;
+    }
 
-@media (max-width: 480px) {
-  .books { flex-direction: column; align-items: center; }
-  .book-card { max-width: 280px; }
-}
-```
+    .hero p strong {
+      font-weight: 700;
+    }
 
+    /* MAIN CONTENT */
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    /* SECTION HEADINGS */
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      color: #c0395b;
+      margin: 2.5rem 0 0.75rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* HOW TO REQUEST */
+    .how-to ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .how-to ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* BOOK DETAILS */
+    .books {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1rem;
+      justify-content: center;
+    }
+
+    .book-card {
+      flex: 1 1 180px;
+      max-width: 220px;
+      text-align: center;
+    }
+
+    .book-card img {
+      width: 100%;
+      border-radius: 4px;
+      display: block;
+      margin-bottom: 0.6rem;
+    }
+
+    .book-card p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    .book-card strong {
+      font-weight: 700;
+    }
+
+    /* LIBRARY LISTS */
+    .library-section {
+      margin-top: 0.5rem;
+    }
+
+    h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      color: #222;
+      margin: 2rem 0 0.5rem;
+      letter-spacing: 0.05em;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.4rem;
+    }
+
+    ul li a {
+      color: #222;
+      text-decoration: underline;
+    }
+
+    ul li a:hover {
+      color: #c0395b;
+    }
+
+    @media (max-width: 480px) {
+      .books {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .book-card {
+        max-width: 280px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -147,105 +185,96 @@ ul li a:hover { color: #c0395b; }
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- HERO -->
-
   <div class="hero">
     <h1>Get the Queenpin Chronicles<br>at Your Local Library</h1>
-    <p>Love <em>your</em> library? You've always been able to request my print and audiobooks — <strong>now</strong> you can also request my e-books! FREE for you, great for your library.</p>
+    <p>Love <em>your</em> library? You've always been able to request my print and audiobooks — <strong>now</strong> you can also request my e-books! Free for you, great for your library.</p>
   </div>
 
   <div class="content">
+    <div class="how-to">
+      <h2>How to Request</h2>
+      <ol>
+        <li>Visit your library's website and look for <strong>"Suggest a Title"</strong> or <strong>"Recommend a Purchase"</strong> (often under eBooks or digital services). Scroll to the list below to see if your library is here.</li>
+        <li>Once you find the page, provide the book details below (title, author, ISBN).</li>
+        <li>Select <strong>eBook</strong> format if asked (they'll order it through OverDrive, Bibliotheca, or similar).</li>
+      </ol>
+    </div>
 
-```
-<!-- HOW TO REQUEST -->
-<div class="how-to">
-  <h2>How to Request</h2>
-  <ol>
-    <li>Visit your library's website and look for <strong>"Suggest a Title"</strong> or <strong>"Recommend a Purchase"</strong> (often under eBooks or digital services). Scroll to the list below to see if your library is here!</li>
-    <li>Once you find the page, provide the book details below (title, author, ISBN).</li>
-    <li>Select <strong>eBook</strong> format if asked (they'll order it through OverDrive, Bibliotheca, or similar).</li>
-  </ol>
-</div>
+    <h2>Book Details</h2>
+    <div class="books">
+      <div class="book-card">
+        <img src="FG Cover SM JH BLURB.jpg" alt="Florida Girls book cover" />
+        <p><strong>Florida Girls</strong><br />ISBN: 9798985815238<br />Author: L.L. Kirchner</p>
+      </div>
 
-<!-- BOOK DETAILS -->
-<h2>Book Details</h2>
-<div class="books">
-  <div class="book-card">
-    <img src="FG Cover SM JH BLURB.jpg" alt="Florida Girls book cover" />
-    <p><strong>Florida Girls</strong><br>ISBN: 9798985815238<br>Author: L.L. Kirchner</p>
-  </div>
-  <div class="book-card">
-    <img src="VG final.jpg" alt="Vegas Girls book cover" />
-    <p><strong>Vegas Girls</strong><br>ISBN: 9798985815269<br>Author: L.L. Kirchner</p>
-  </div>
-  <div class="book-card">
-    <img src="HG BOOK COVER.jpg" alt="Havana Girls book cover" />
-    <p><strong>Havana Girls</strong><br>ISBN: 9798985815283<br>Author: L.L. Kirchner</p>
-  </div>
-</div>
+      <div class="book-card">
+        <img src="VG final.jpg" alt="Vegas Girls book cover" />
+        <p><strong>Vegas Girls</strong><br />ISBN: 9798985815269<br />Author: L.L. Kirchner</p>
+      </div>
 
-<!-- LIBRARY LINKS -->
-<h2>Find Your Local Library Below</h2>
-<p>Click the name of your local library and go straight to the request page.</p>
+      <div class="book-card">
+        <img src="HG BOOK COVER.jpg" alt="Havana Girls book cover" />
+        <p><strong>Havana Girls</strong><br />ISBN: 9798985815283<br />Author: L.L. Kirchner</p>
+      </div>
+    </div>
 
-<div class="library-section">
+    <h2>Find Your Local Library Below</h2>
+    <p>Click the name of your local library and go straight to the request page.</p>
 
-  <h3>Florida</h3>
-  <ul>
-    <li><a href="https://ocls.info/contact-us/suggest-a-title/" target="_blank">Orange County Library System (OCLS) – Suggest a Title</a></li>
-    <li><a href="https://www.pbclibrary.org/suggest-an-item/" target="_blank">Palm Beach County Library – Suggest an Item</a></li>
-    <li><a href="https://hcplc.org/about/contact" target="_blank">Hillsborough County Public Library – Contact/Suggest a Title</a></li>
-    <li><a href="https://www.mdpls.org/" target="_blank">Miami-Dade Public Library – Main Site (request via account)</a></li>
-    <li><a href="https://www.broward.org/Library/Pages/BCLLocalAuthors.aspx" target="_blank">Broward County Library – Local Author Submission</a></li>
-    <li><a href="https://pplc.us/" target="_blank">Pinellas Public Library Cooperative – System Info</a></li>
-    <li><a href="https://www.leegov.com/library/services/purchase-requests" target="_blank">Lee County Library – Purchase Requests</a></li>
-    <li><a href="https://www.sarasotacountylibraries.org/services/interlibrary-loan/suggestion-for-purchase-form" target="_blank">Sarasota County Libraries – Suggest a Purchase</a></li>
-    <li><a href="https://www.brevardfl.gov/PublicLibraries" target="_blank">Brevard County Libraries – Main Site</a></li>
-    <li><a href="https://www.volusialibrary.org/request-title/" target="_blank">Volusia County Public Libraries – Request a Title</a></li>
-    <li><a href="https://pascolibraries.org/about/contact-us/" target="_blank">Pasco County Libraries – Contact Page</a></li>
-    <li><a href="https://www.polkcolibrary.org/books-and-more/suggestion-for-purchase/" target="_blank">Polk County Library Cooperative – Suggestion for Purchase</a></li>
-    <li><a href="https://www.sarasotacountylibraries.org/services/interlibrary-loan/suggestion-for-purchase-form/" target="_blank">Selby Library Sarasota – Suggestion for Purchase</a></li>
-    <li><a href="https://www.seminolecountyfl.gov/departments-services/parks-recreation/seminole-county-library/library-information/contact-us" target="_blank">Seminole County Library – Contact/Suggestions</a></li>
-    <li><a href="https://www.stpete.org/government/departments/library/about_us/suggest_a_purchase.php" target="_blank">St. Petersburg Library System – Suggest a Purchase</a></li>
-    <li><a href="https://www.myclearwaterlibrary.com/about/contact-us" target="_blank">Clearwater Public Library System – Contact Page</a></li>
-    <li><a href="https://www.mymanatee.org/departments/library/library_services/request_items" target="_blank">Manatee County Library – Request Items</a></li>
-    <li><a href="https://www.colliercountyfl.gov/government/public-services/library/library-services" target="_blank">Collier County Library – Library Services</a></li>
-    <li><a href="https://sjcpls.org/suggest-a-title/" target="_blank">St. Johns County Library – Suggest a Title</a></li>
-  </ul>
+    <div class="library-section">
+      <h3>Florida</h3>
+      <ul>
+        <li><a href="https://ocls.info/contact-us/suggest-a-title/" target="_blank" rel="noopener noreferrer">Orange County Library System (OCLS) – Suggest a Title</a></li>
+        <li><a href="https://www.pbclibrary.org/suggest-an-item/" target="_blank" rel="noopener noreferrer">Palm Beach County Library – Suggest an Item</a></li>
+        <li><a href="https://hcplc.org/about/contact" target="_blank" rel="noopener noreferrer">Hillsborough County Public Library – Contact/Suggest a Title</a></li>
+        <li><a href="https://www.mdpls.org/" target="_blank" rel="noopener noreferrer">Miami-Dade Public Library – Main Site (request via account)</a></li>
+        <li><a href="https://www.broward.org/Library/Pages/BCLLocalAuthors.aspx" target="_blank" rel="noopener noreferrer">Broward County Library – Local Author Submission</a></li>
+        <li><a href="https://pplc.us/" target="_blank" rel="noopener noreferrer">Pinellas Public Library Cooperative – System Info</a></li>
+        <li><a href="https://www.leegov.com/library/services/purchase-requests" target="_blank" rel="noopener noreferrer">Lee County Library – Purchase Requests</a></li>
+        <li><a href="https://www.sarasotacountylibraries.org/services/interlibrary-loan/suggestion-for-purchase-form" target="_blank" rel="noopener noreferrer">Sarasota County Libraries – Suggest a Purchase</a></li>
+        <li><a href="https://www.brevardfl.gov/PublicLibraries" target="_blank" rel="noopener noreferrer">Brevard County Libraries – Main Site</a></li>
+        <li><a href="https://www.volusialibrary.org/request-title/" target="_blank" rel="noopener noreferrer">Volusia County Public Libraries – Request a Title</a></li>
+        <li><a href="https://pascolibraries.org/about/contact-us/" target="_blank" rel="noopener noreferrer">Pasco County Libraries – Contact Page</a></li>
+        <li><a href="https://www.polkcolibrary.org/books-and-more/suggestion-for-purchase/" target="_blank" rel="noopener noreferrer">Polk County Library Cooperative – Suggestion for Purchase</a></li>
+        <li><a href="https://www.sarasotacountylibraries.org/services/interlibrary-loan/suggestion-for-purchase-form/" target="_blank" rel="noopener noreferrer">Selby Library Sarasota – Suggestion for Purchase</a></li>
+        <li><a href="https://www.seminolecountyfl.gov/departments-services/parks-recreation/seminole-county-library/library-information/contact-us" target="_blank" rel="noopener noreferrer">Seminole County Library – Contact/Suggestions</a></li>
+        <li><a href="https://www.stpete.org/government/departments/library/about_us/suggest_a_purchase.php" target="_blank" rel="noopener noreferrer">St. Petersburg Library System – Suggest a Purchase</a></li>
+        <li><a href="https://www.myclearwaterlibrary.com/about/contact-us" target="_blank" rel="noopener noreferrer">Clearwater Public Library System – Contact Page</a></li>
+        <li><a href="https://www.mymanatee.org/departments/library/library_services/request_items" target="_blank" rel="noopener noreferrer">Manatee County Library – Request Items</a></li>
+        <li><a href="https://www.colliercountyfl.gov/government/public-services/library/library-services" target="_blank" rel="noopener noreferrer">Collier County Library – Library Services</a></li>
+        <li><a href="https://sjcpls.org/suggest-a-title/" target="_blank" rel="noopener noreferrer">St. Johns County Library – Suggest a Title</a></li>
+      </ul>
 
-  <h3>Nevada</h3>
-  <ul>
-    <li><a href="https://lvccld.org/suggest-a-purchase/" target="_blank">Las Vegas-Clark County Library District – Suggest a Purchase</a></li>
-    <li><a href="https://washoecountylibrary.us/suggest.php" target="_blank">Washoe County Library System – Suggest a Title</a></li>
-    <li><a href="https://hendersonlibraries.com/suggest-a-purchase" target="_blank">Henderson Libraries – Suggest a Purchase</a></li>
-    <li><a href="https://www.cityofnorthlasvegas.com/Departments/Library/About/Contact" target="_blank">North Las Vegas Library District – Contact</a></li>
-  </ul>
+      <h3>Nevada</h3>
+      <ul>
+        <li><a href="https://lvccld.org/suggest-a-purchase/" target="_blank" rel="noopener noreferrer">Las Vegas-Clark County Library District – Suggest a Purchase</a></li>
+        <li><a href="https://washoecountylibrary.us/suggest.php" target="_blank" rel="noopener noreferrer">Washoe County Library System – Suggest a Title</a></li>
+        <li><a href="https://hendersonlibraries.com/suggest-a-purchase" target="_blank" rel="noopener noreferrer">Henderson Libraries – Suggest a Purchase</a></li>
+        <li><a href="https://www.cityofnorthlasvegas.com/Departments/Library/About/Contact" target="_blank" rel="noopener noreferrer">North Las Vegas Library District – Contact</a></li>
+      </ul>
 
-  <h3>New York</h3>
-  <ul>
-    <li><a href="https://www.nypl.org/books-music-movies/recommendations/suggest-title" target="_blank">New York Public Library – Suggest a Title</a></li>
-    <li><a href="https://www.bklynlibrary.org/ask/request-purchase-form" target="_blank">Brooklyn Public Library – Request to Purchase</a></li>
-    <li><a href="https://www.queenslibrary.org/about-us/contact-us" target="_blank">Queens Public Library – Contact Page</a></li>
-    <li><a href="https://www.buffalolib.org/how-suggest-titles-purchase" target="_blank">Buffalo &amp; Erie County Library – Suggest Titles</a></li>
-    <li><a href="https://www.onlib.org/suggest-a-title" target="_blank">Onondaga County Public Library – Suggest a Title</a></li>
-    <li><a href="https://www.ypl.org/suggest-a-title" target="_blank">Yonkers Public Library – Suggest a Title</a></li>
-    <li><a href="https://www.westchesterlibraries.org/" target="_blank">Westchester Library System – Main Site</a></li>
-  </ul>
+      <h3>New York</h3>
+      <ul>
+        <li><a href="https://www.nypl.org/books-music-movies/recommendations/suggest-title" target="_blank" rel="noopener noreferrer">New York Public Library – Suggest a Title</a></li>
+        <li><a href="https://www.bklynlibrary.org/ask/request-purchase-form" target="_blank" rel="noopener noreferrer">Brooklyn Public Library – Request to Purchase</a></li>
+        <li><a href="https://www.queenslibrary.org/about-us/contact-us" target="_blank" rel="noopener noreferrer">Queens Public Library – Contact Page</a></li>
+        <li><a href="https://www.buffalolib.org/how-suggest-titles-purchase" target="_blank" rel="noopener noreferrer">Buffalo &amp; Erie County Library – Suggest Titles</a></li>
+        <li><a href="https://www.onlib.org/suggest-a-title" target="_blank" rel="noopener noreferrer">Onondaga County Public Library – Suggest a Title</a></li>
+        <li><a href="https://www.ypl.org/suggest-a-title" target="_blank" rel="noopener noreferrer">Yonkers Public Library – Suggest a Title</a></li>
+        <li><a href="https://www.westchesterlibraries.org/" target="_blank" rel="noopener noreferrer">Westchester Library System – Main Site</a></li>
+      </ul>
 
-  <h3>Pennsylvania</h3>
-  <ul>
-    <li><a href="https://libwww.freelibrary.org/blog/post/5014" target="_blank">Free Library of Philadelphia – Request Info</a></li>
-    <li><a href="https://www.carnegielibrary.org/suggest-a-title/" target="_blank">Carnegie Library of Pittsburgh – Suggest a Title</a></li>
-    <li><a href="https://buckslib.org/contact-us/suggest-a-purchase/" target="_blank">Bucks County Library – Suggest a Purchase</a></li>
-    <li><a href="https://www.ccls.org/FormCenter/Library-Services-5/Suggestion-for-Purchase-Form-44" target="_blank">Chester County Library – Suggestion for Purchase</a></li>
-    <li><a href="https://www.berkslibraries.org/suggest-purchase" target="_blank">Berks County Public Libraries – Suggest a Purchase</a></li>
-    <li><a href="https://erielibrary.org/resources/suggest-a-title/" target="_blank">Erie County Library – Suggest a Title</a></li>
-    <li><a href="https://lancasterlibraries.org/howdoi/i-request-an-item/" target="_blank">Library System of Lancaster County – Request an Item</a></li>
-  </ul>
-
-</div>
-```
-
+      <h3>Pennsylvania</h3>
+      <ul>
+        <li><a href="https://libwww.freelibrary.org/blog/post/5014" target="_blank" rel="noopener noreferrer">Free Library of Philadelphia – Request Info</a></li>
+        <li><a href="https://www.carnegielibrary.org/suggest-a-title/" target="_blank" rel="noopener noreferrer">Carnegie Library of Pittsburgh – Suggest a Title</a></li>
+        <li><a href="https://buckslib.org/contact-us/suggest-a-purchase/" target="_blank" rel="noopener noreferrer">Bucks County Library – Suggest a Purchase</a></li>
+        <li><a href="https://www.ccls.org/FormCenter/Library-Services-5/Suggestion-for-Purchase-Form-44" target="_blank" rel="noopener noreferrer">Chester County Library – Suggestion for Purchase</a></li>
+        <li><a href="https://www.berkslibraries.org/suggest-purchase" target="_blank" rel="noopener noreferrer">Berks County Public Libraries – Suggest a Purchase</a></li>
+        <li><a href="https://erielibrary.org/resources/suggest-a-title/" target="_blank" rel="noopener noreferrer">Erie County Library – Suggest a Title</a></li>
+        <li><a href="https://lancasterlibraries.org/howdoi/i-request-an-item/" target="_blank" rel="noopener noreferrer">Library System of Lancaster County – Request an Item</a></li>
+      </ul>
+    </div>
   </div>
 
 </body>
