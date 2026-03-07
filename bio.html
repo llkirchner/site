@@ -21,18 +21,24 @@ nav { background: var(--cream); border-bottom: 1px solid #ddd; padding: 1rem 2re
 
 .bio-wrap { max-width: 800px; margin: 5rem auto; padding: 0 2rem; }
 
-h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 7vw, 4.5rem); letter-spacing: 2px; margin-bottom: 2.5rem; color: var(--dark); }
+/* Hero: centered headline, photo, intro */
+.hero { text-align: center; margin-bottom: 2.5rem; }
+.hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 7vw, 4.5rem); letter-spacing: 2px; color: var(--dark); margin-bottom: 1.75rem; }
+.hero img { width: 200px; height: 250px; object-fit: cover; object-position: top; border-radius: 8px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); margin-bottom: 1.75rem; }
 
-/* Centered intro block */
-.bio-intro { max-width: 580px; margin: 0 auto 3.5rem; text-align: center; }
-.bio-intro p { font-size: 1.05rem; line-height: 1.8; color: #333; margin-bottom: 1.25rem; }
+.intro { max-width: 520px; margin: 0 auto; text-align: center; }
+.intro p.big { font-size: 1.2rem; font-weight: 700; line-height: 1.6; color: var(--dark); margin-bottom: 0.85rem; }
+.intro p.small { font-size: 0.95rem; line-height: 1.75; color: #555; margin-bottom: 0.65rem; }
+.intro p.small:last-child { margin-bottom: 0; }
 
-/* Photo + first-person bio */
-.bio-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: start; }
-.bio-photo img { width: 100%; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
-.bio-text p { font-size: 1rem; line-height: 1.75; color: #333; margin-bottom: 1.25rem; }
-.bio-text p em { font-style: italic; }
+hr.divider { border: none; border-top: 1px solid #ccc; margin: 2rem 0; }
 
+/* First-person section */
+.bio-personal { max-width: 520px; margin: 0 auto; text-align: center; font-style: italic; }
+.bio-personal p { font-size: 1rem; line-height: 1.75; color: #333; margin-bottom: 1.25rem; }
+.bio-personal p:last-child { margin-bottom: 0; }
+
+/* Press */
 .press-logos { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd; }
 .press-logos p { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 2px; color: #888; margin-bottom: 1rem; text-align: center; }
 .press-list { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
@@ -41,7 +47,6 @@ h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 7vw, 4.5rem
 footer { border-top: 1px solid #ddd; padding: 2rem; text-align: center; font-size: 0.85rem; color: #888; margin-top: 4rem; }
 
 @media (max-width: 650px) {
-  .bio-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
 }
 ```
@@ -61,23 +66,22 @@ footer { border-top: 1px solid #ddd; padding: 2rem; text-align: center; font-siz
 </nav>
 
 <div class="bio-wrap">
-  <h1>For the Smart Reader Who Craves a Page-Turner</h1>
-
-  <div class="bio-intro">
-    <p>L.L. Kirchner has always believed the most powerful woman in the room isn't the noisiest. She's the one paying attention.</p>
-    <p>She's spent her career paying attention to that woman, in her two memoirs, her subsequent trilogy about swimsuit models on a war bond tour taking on the mafia, and now her forthcoming series about powerful institutions versus ordinary people.</p>
-    <p>She wants to entertain you first. Let the rest sneak up on you.</p>
+  <div class="hero">
+    <h1>For the Smart Reader Who Craves a Page-Turner</h1>
+    <img src="https://raw.githubusercontent.com/llkirchner/site/main/L.L.%20Kirchner%20Author%20Headshot.JPG" alt="L.L. Kirchner">
+    <div class="intro">
+      <p class="big">L.L. Kirchner has always believed the most powerful woman in the room isn't the noisiest. She's the one paying attention.</p>
+      <p class="small">She's spent her career paying attention to that woman, in her two memoirs, her subsequent trilogy about swimsuit models on a war bond tour taking on the mafia, and now her forthcoming series about powerful institutions versus ordinary people.</p>
+      <p class="small">She wants to entertain you first. Let the rest sneak up on you.</p>
+    </div>
   </div>
 
-  <div class="bio-grid">
-    <div class="bio-photo">
-      <img src="https://raw.githubusercontent.com/llkirchner/site/main/L.L.%20Kirchner%20Author%20Headshot.JPG" alt="L.L. Kirchner">
-    </div>
-    <div class="bio-text">
-      <p>I've been a journalist, a story coach, an award-winning screenwriter, and even an on-air host for the Home Shopping Network.</p>
-      <p>My life and work as an expat in Asia became the basis of two memoirs — and that was after I was the religion editor for an LGBTQIA+ paper, the dating columnist for an alt newsweekly, and the bridal editor for a society rag… all at the same time.</p>
-      <p>My writing has appeared in <em>The Washington Post</em>, <em>Salon</em>, and <em>The Rumpus</em> among numerous other outlets.</p>
-    </div>
+  <hr class="divider">
+
+  <div class="bio-personal">
+    <p>I've been a journalist, a story coach, an award-winning screenwriter, and even an on-air host for the Home Shopping Network.</p>
+    <p>My life and work as an expat in Asia became the basis of two memoirs — and that was after I was the religion editor for an LGBTQIA+ paper, the dating columnist for an alt newsweekly, and the bridal editor for a society rag… all at the same time.</p>
+    <p>My writing has appeared in <em>The Washington Post</em>, <em>Salon</em>, and <em>The Rumpus</em> among numerous other outlets.</p>
   </div>
 
   <div class="press-logos">
