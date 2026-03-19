@@ -22,7 +22,7 @@ a { color: inherit; text-decoration: none; }
 }
 .header-logo {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
   letter-spacing: 0.1em;
   color: #c0395b;
   white-space: nowrap;
@@ -34,7 +34,7 @@ a { color: inherit; text-decoration: none; }
 }
 .header-nav a {
   font-family: 'Lato', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -49,7 +49,7 @@ a { color: inherit; text-decoration: none; }
 }
 .header-social a { color: #1a1a1a; display: flex; align-items: center; }
 .header-social a:hover { color: #c0395b; }
-.header-social svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.header-social svg { width: 20px; height: 20px; fill: currentColor; }
 
 .hero {
   background: #1a1a2e;
@@ -59,7 +59,8 @@ a { color: inherit; text-decoration: none; }
 }
 .series-label {
   font-family: 'Lato', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #c0395b;
@@ -82,7 +83,7 @@ a { color: inherit; text-decoration: none; }
 .hero-body {
   max-width: 600px;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: rgba(245,242,235,0.85);
   line-height: 1.8;
 }
@@ -95,7 +96,7 @@ a { color: inherit; text-decoration: none; }
 
 .section-label {
   font-family: 'Lato', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #c0395b;
@@ -150,8 +151,8 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 1rem;
 }
 .book-blurb {
-  font-size: 0.95rem;
-  line-height: 1.75;
+  font-size: 1rem;
+  line-height: 1.8;
   color: #333;
   margin-bottom: 1.5rem;
 }
@@ -213,7 +214,7 @@ a { color: inherit; text-decoration: none; }
   border-top: 1px solid rgba(0,0,0,0.1);
 }
 .queenpins-cta p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #555;
   margin-bottom: 1rem;
   letter-spacing: 0.05em;
@@ -234,14 +235,14 @@ a { color: inherit; text-decoration: none; }
 .bio-footer p {
   max-width: 580px;
   margin: 0 auto 1rem;
-  font-size: 0.95rem;
-  color: rgba(245,242,235,0.8);
-  line-height: 1.8;
+  font-size: 1.05rem;
+  color: rgba(245,242,235,0.85);
+  line-height: 1.85;
 }
 .bio-footer .read-bio {
   display: inline-block;
   margin-top: 1.5rem;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -269,7 +270,23 @@ a { color: inherit; text-decoration: none; }
 .footer-social { display: flex; gap: 1rem; align-items: center; }
 .footer-social a { color: rgba(245,242,235,0.5); display: flex; align-items: center; transition: color 0.2s; }
 .footer-social a:hover { color: #c0395b; }
-.footer-social svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.footer-social svg { width: 20px; height: 20px; fill: currentColor; }
+
+@media (max-width: 768px) {
+  .header-social { display: none; }
+  .site-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .header-logo {
+    width: 100%;
+    text-align: center;
+  }
+  .header-nav {
+    gap: 1.25rem;
+  }
+}
 
 @media (max-width: 600px) {
   .hero { padding: 3.5rem 1.5rem 3rem; }
@@ -289,22 +306,23 @@ a { color: inherit; text-decoration: none; }
     <li><a href="https://llkirchner.com/contact.html">Contact</a></li>
   </ul>
   <div class="header-social">
-    <a href="https://facebook.com/llkirchner" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-    <a href="https://instagram.com/llkirchnerauthor" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-    <a href="https://tiktok.com/@llkirchnerauthor" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg></a>
+    <a href="https://facebook.com/llkirchner" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+    </a>
+    <a href="https://instagram.com/llkirchnerauthor" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+    <a href="https://tiktok.com/@llkirchnerauthor" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+    </a>
   </div>
 </header>
 
 <section class="hero">
-  <p class="series-label"><b>You Want Immersive, Page-Turning Reads? You&rsquo;re In The Right Place.</b></p>
+  <p class="series-label">You Want Immersive, Page-Turning Reads? You&rsquo;re In The Right Place.</p>
   <h1>Three Rivers<br>Mysteries</h1>
   <p class="hero-tagline">When reality has &ldquo;versions&rdquo; who do you trust?</p>
-  <p class="hero-body">
-Each Three Rivers Mystery drops you into a different corner of 1990s Pittsburgh — from boardrooms to back rooms to performance spaces — where stories are easily rewritten and the wrong woman always ends up in the crosshairs.
-The catch: that woman isn't always sure she can trust herself. At first.
-But when she finally decides to believe herself, she becomes the most dangerous person in the room. For readers who love an underdog. 
-    Think office politics, family dysfunction, and a lot of bad choices as my heroines discover that reality isn't a given. 
-Because writing contemporary issues through a historical lens lets me get away with a lot.</p>
+  <p class="hero-body">Psychological suspense novels set in Pittsburgh&rsquo;s 1990s arts world, where the wrong woman always ends up in the crosshairs, and the real mystery is who gets believed. For readers who love an underdog.</p>
 </section>
 
 <div class="section">
@@ -317,7 +335,9 @@ Because writing contemporary issues through a historical lens lets me get away w
       </div>
       <p class="book-tag">Prequel</p>
       <h2 class="book-title">Steel City Burn</h2>
-      <p class="book-blurb">Jessica Greer needs one good story. What she gets is a night at the theater that ends in a confrontation she can&rsquo;t forget &mdash; with a man she&rsquo;ll later be accused of killing. <em>Steel City Burn</em> is where it all begins.</p>
+      <p class="book-blurb">She has a PR day job, a journalism degree she&rsquo;s not using, and one shot at landing a dream job as a critic for the city&rsquo;s hottest alt-newsweekly.</p>
+      <p class="book-blurb">What she gets instead is a disaster of a play, a theater full of people with knives out for each other, and a target on her back.</p>
+      <p class="book-blurb">Start here. Before everything goes wrong.</p>
       <a class="btn btn-filled" href="https://dl.bookfunnel.com/fdqpuohz54" target="_blank" rel="noopener">Read the Prequel Now</a>
     </div>
 
@@ -327,8 +347,7 @@ Because writing contemporary issues through a historical lens lets me get away w
       </div>
       <p class="book-tag">Book One</p>
       <h2 class="book-title">Steel City Critic</h2>
-      <p class="book-blurb">A notorious theater critic is poisoned and all eyes turn to the woman he replaced &mdash; a broke Gen X freelancer whose mental health history makes her doubt her own innocence. To clear her name she launches a desperate investigation, but can she untangle the artistic rivalries, false personas, and buried secrets before she&rsquo;s next?</p>
-      <p class="book-blurb" style="font-size:0.875rem; font-style:italic; color:#555;">The media manipulation of <em>Gone Girl</em>, the complex relationships of <em>Big Little Lies</em>, set against the authentic 1990s backdrop of <em>Reality Bites</em>.</p>
+      <p class="book-blurb">He took her column. Then someone poisoned him. She didn&rsquo;t do it &mdash; she&rsquo;s pretty sure &mdash; but her mental health history has a way of making her doubt herself. And if she can&rsquo;t trust her own memory, how is she supposed to prove her innocence?</p>
       <a class="btn" href="#notify">Be First to Know</a>
     </div>
 
@@ -350,18 +369,24 @@ Because writing contemporary issues through a historical lens lets me get away w
 
 <section class="bio-footer">
   <h2>Who Am I To Write About Rebellious Women?</h2>
-  <p>I've been a journalist, a story coach, an award-winning screenwriter, and even an on-air host for the Home Shopping Network. My life and work as an expat in Asia became the basis of two memoirs. And I was once simultaneously the religion editor for an LGBTQIA+ paper, the dating columnist for an alt newsweekly, and the bridal editor for a society rag.</p>
+  <p>I&rsquo;ve been a journalist, a story coach, an award-winning screenwriter, and even an on-air host for the Home Shopping Network. My life and work as an expat in Asia became the basis of two memoirs. And I was once simultaneously the religion editor for an LGBTQIA+ paper, the dating columnist for an alt newsweekly, and the bridal editor for a society rag.</p>
   <p>My writing has appeared in <em>The Washington Post</em>, <em>Salon</em>, and <em>The Rumpus</em> among numerous other outlets.</p>
-<p>I’m also a proud grandma, longtime yoga teacher, and avid garden lady, living in Florida with my favorite husband and our best boy, Hartley.</p>
-<p>I’ve never believed the most powerful person in the room is the noisiest, but the one who’s paying attention.</p>
+  <p>I&rsquo;m also a proud grandma, longtime yoga teacher, and avid garden lady, living in Florida with my favorite husband and our best boy, Hartley.</p>
+  <p>I&rsquo;ve never believed the most powerful person in the room is the noisiest, but the one who&rsquo;s paying attention.</p>
   <a class="read-bio" href="https://llkirchner.com/bio.html">Read Full Bio</a>
 </section>
 
 <footer class="site-footer">
   <div class="footer-social">
-    <a href="https://facebook.com/llkirchner" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-    <a href="https://instagram.com/llkirchnerauthor" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-    <a href="https://tiktok.com/@llkirchnerauthor" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg></a>
+    <a href="https://facebook.com/llkirchner" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+    </a>
+    <a href="https://instagram.com/llkirchnerauthor" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+    <a href="https://tiktok.com/@llkirchnerauthor" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+    </a>
   </div>
   <p>&copy; 2026 L.L. Kirchner. All rights reserved.</p>
 </footer>
