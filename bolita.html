@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bolita | L.L. Kirchner</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<script src="https://assets.flodesk.com/universal.js"></script>
-
+<script src="https://assets.flodesk.com/universal.js" defer></script>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -193,13 +192,21 @@ a { color: inherit; text-decoration: none; }
   <p class="wanna-play">Wanna Play?</p>
 
   <div class="flodesk-wrapper">
-    <div id="fd-form-6921a4dab4a6c94096b1d31a"></div>
-    <script>
+  <div id="fd-form-6921a4dab4a6c94096b1d31a"></div>
+</div>
+
+<script>
+  window.addEventListener('load', function () {
+    if (window.fd) {
       window.fd('form', {
         formId: '6921a4dab4a6c94096b1d31a',
-        containerEl: '#fd-form-6921a4dab4a6c94096b1d31a'
+        containerEl: document.getElementById('fd-form-6921a4dab4a6c94096b1d31a')
       });
-    </script>
+    } else {
+      console.error('Flodesk script did not load.');
+    }
+  });
+</script>
   </div>
 
   <img src="https://raw.githubusercontent.com/llkirchner/site/main/color-bolita-balls.png" alt="Bolita numbered wooden balls" class="bolita-image">
