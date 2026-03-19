@@ -19,7 +19,6 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
-/* ── HEADER ── */
 .site-header {
   background: #f5f2eb;
   padding: 1rem 2rem;
@@ -72,7 +71,6 @@ a { color: inherit; text-decoration: none; }
 .header-social a:hover { color: #c0395b; }
 .header-social svg { width: 20px; height: 20px; fill: currentColor; }
 
-/* ── MAIN CONTENT ── */
 .bolita-page {
   max-width: 860px;
   margin: 0 auto;
@@ -114,7 +112,7 @@ a { color: inherit; text-decoration: none; }
   max-width: 680px;
   height: auto;
   display: block;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2.5rem;
   border-radius: 4px;
 }
 
@@ -126,24 +124,20 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 1rem;
 }
 
+.flodesk-wrapper {
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+}
+
 .form-instructions {
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
   line-height: 1.8;
   color: #333;
-  max-width: 660px;
-  margin: 0 auto 2.5rem;
-}
-
-.form-instructions strong { font-weight: 700; }
-
-/* ── FLODESK EMBED WRAPPER ── */
-.flodesk-wrapper {
-  max-width: 680px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-/* ── MOBILE ── */
 @media (max-width: 768px) {
   .site-header {
     flex-wrap: wrap;
@@ -151,15 +145,12 @@ a { color: inherit; text-decoration: none; }
     gap: 0.75rem;
     padding: 1rem;
   }
-
   .header-social { display: none; }
-
   .header-nav {
     gap: 1.25rem;
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .bolita-page {
     padding: 2rem 1.25rem 4rem;
   }
@@ -191,18 +182,30 @@ a { color: inherit; text-decoration: none; }
 
 <main class="bolita-page">
 
+  <img src="https://raw.githubusercontent.com/llkirchner/site/main/QPC-bolita-banner-for-web-page.jpg" alt="The Queenpin Chronicles" class="bolita-image">
+
   <h1>Bolita! Play Here.</h1>
-  <p class="bolita-subhead">Enter a number from 1 to 100 to win&hellip;</p>
+  <p class="bolita-subhead">Enter the number you drew to win&hellip;</p>
 
   <p class="bolita-intro">AND you&rsquo;re on the list for the &lsquo;Insiders Newsletter,&rsquo; my mostly monthly newsletter of subscriber-only giveaways, excerpts, and behind-the-scenes sneak peeks. If we&rsquo;re not playing this game live and in person, you&rsquo;re free to sign up but the game is not on&hellip;&nbsp; No purchase necessary. Unsubscribe at any time.</p>
 
-  <img src="https://raw.githubusercontent.com/llkirchner/site/main/QPC-bolita-banner-for-web-page.jpg" alt="The Queenpin Chronicles" class="bolita-image" style="margin-bottom:1.5rem;">
-  <img src="https://raw.githubusercontent.com/llkirchner/site/main/color-bolita-balls.png" alt="Bolita numbered wooden balls" class="bolita-image">
-
   <p class="wanna-play">Wanna Play?</p>
-
-  <p class="form-instructions">Filling out the form sends the number you drew to my inbox. Be sure to mark hello@llkirchner.com as a safe sender so you don&rsquo;t miss your notification. Prizes unclaimed for more than 4 days will not be redeemable as I&rsquo;ll move on to the next entrant. Thank you for your interest!</p>
 
   <div class="flodesk-wrapper">
     <div id="fd-form-6921a4dab4a6c94096b1d31a"></div>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-s
+    <script>
+      window.fd('form', {
+        formId: '6921a4dab4a6c94096b1d31a',
+        containerEl: '#fd-form-6921a4dab4a6c94096b1d31a'
+      });
+    </script>
+  </div>
+
+  <img src="https://raw.githubusercontent.com/llkirchner/site/main/color-bolita-balls.png" alt="Bolita numbered wooden balls" class="bolita-image">
+
+  <p class="form-instructions">Filling out the form sends the number you drew to my inbox. Be sure to mark hello @ llkirchner . com as a safe sender so you don&rsquo;t miss your notification. Prizes unclaimed for more than 4 days will not be redeemable as I&rsquo;ll move on to the next entrant. Thank you for your interest!</p>
+
+</main>
+
+</body>
+</html>
