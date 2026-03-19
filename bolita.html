@@ -1,254 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bolita | L.L. Kirchner</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bolita | L.L. Kirchner</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script>
+  (function(w, d, t, h, s, n) {
+    w.FlodeskObject = n;
+    var fn = function() {
+      (w[n].q = w[n].q || []).push(arguments);
+    };
+    w[n] = w[n] || fn;
+    var f = d.getElementsByTagName(t)[0];
+    var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+    var sm = d.createElement(t);
+    sm.async = true;
+    sm.type = 'module';
+    sm.src = h + s + '.mjs' + v;
+    f.parentNode.insertBefore(sm, f);
+    var sn = d.createElement(t);
+    sn.async = true;
+    sn.noModule = true;
+    sn.src = h + s + '.js' + v;
+    f.parentNode.insertBefore(sn, f);
+  })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+</script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <script src="https://assets.flodesk.com/universal.js" defer></script>
+body {
+  background: #f5f2eb;
+  color: #1a1a1a;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
 
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
+a { color: inherit; text-decoration: none; }
 
-    body {
-      margin: 0;
-      background: #f5f2eb;
-      color: #1a1a1a;
-      font-family: 'Lato', sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-    }
+.site-header {
+  background: #f5f2eb;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+.header-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  color: #c0395b;
+  white-space: nowrap;
+}
 
-    .site-header {
-      background: #f5f2eb;
-      padding: 1rem 2rem;
-      border-bottom: 1px solid rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
+.header-nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
 
-    .header-logo {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 2rem;
-      letter-spacing: 0.1em;
-      color: #c0395b;
-      white-space: nowrap;
-    }
+.header-nav a {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  transition: color 0.2s;
+}
 
-    .header-nav {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+.header-nav a:hover { color: #c0395b; }
 
-    .header-nav a {
-      font-family: 'Lato', sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #1a1a1a;
-      transition: color 0.2s;
-    }
+.header-social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
 
-    .header-nav a:hover {
-      color: #c0395b;
-    }
+.header-social a {
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
 
-    .header-social {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
+.header-social a:hover { color: #c0395b; }
+.header-social svg { width: 20px; height: 20px; fill: currentColor; }
 
-    .header-social a {
-      color: #1a1a1a;
-      display: flex;
-      align-items: center;
-      transition: color 0.2s;
-    }
+.bolita-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 2rem 5rem;
+  text-align: center;
+}
 
-    .header-social a:hover {
-      color: #c0395b;
-    }
+.bolita-page h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 10vw, 5.5rem);
+  letter-spacing: 0.05em;
+  color: #1a1a1a;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
 
-    .header-social svg {
-      width: 20px;
-      height: 20px;
-      fill: currentColor;
-    }
+.bolita-subhead {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c0395b;
+  margin-bottom: 1.5rem;
+}
 
-    .bolita-page {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 3rem 2rem 5rem;
-      text-align: center;
-    }
+.bolita-intro {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.8;
+  color: #333;
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+}
 
-    .bolita-page h1 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(3rem, 10vw, 5.5rem);
-      letter-spacing: 0.05em;
-      color: #1a1a1a;
-      line-height: 1;
-      margin: 0 0 0.5rem 0;
-    }
+.bolita-image {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  display: block;
+  margin: 0 auto 2.5rem;
+  border-radius: 4px;
+}
 
-    .bolita-subhead {
-      font-family: 'Lato', sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: #c0395b;
-      margin: 0 0 1.5rem 0;
-    }
+.wanna-play {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.08em;
+  color: #c0395b;
+  margin-bottom: 1rem;
+}
 
-    .bolita-intro {
-      font-family: 'Lato', sans-serif;
-      font-size: 1rem;
-      font-style: italic;
-      line-height: 1.8;
-      color: #333;
-      max-width: 680px;
-      margin: 0 auto 2.5rem;
-    }
+.flodesk-wrapper {
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+}
 
-    .bolita-image {
-      width: 100%;
-      max-width: 680px;
-      height: auto;
-      display: block;
-      margin: 0 auto 2.5rem;
-      border-radius: 4px;
-    }
+.form-instructions {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-    .wanna-play {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 2.5rem;
-      letter-spacing: 0.08em;
-      color: #c0395b;
-      margin: 0 0 1rem 0;
-    }
-
-    .flodesk-wrapper {
-      max-width: 680px;
-      margin: 0 auto 2.5rem;
-    }
-
-    .form-instructions {
-      font-family: 'Lato', sans-serif;
-      font-size: 1rem;
-      line-height: 1.8;
-      color: #333;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    @media (max-width: 768px) {
-      .site-header {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.75rem;
-        padding: 1rem;
-      }
-
-      .header-social {
-        display: none;
-      }
-
-      .header-nav {
-        gap: 1.25rem;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      .bolita-page {
-        padding: 2rem 1.25rem 4rem;
-      }
-    }
-  </style>
+@media (max-width: 768px) {
+  .site-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+  .header-social { display: none; }
+  .header-nav {
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .bolita-page {
+    padding: 2rem 1.25rem 4rem;
+  }
+}
+</style>
 </head>
 <body>
 
-  <header class="site-header">
-    <a class="header-logo" href="https://llkirchner.com/">L.L. Kirchner</a>
+<header class="site-header">
+  <a class="header-logo" href="https://llkirchner.com/">L.L. Kirchner</a>
+  <ul class="header-nav">
+    <li><a href="https://llkirchner.com/">Home</a></li>
+    <li><a href="https://llkirchner.com/books.html">Books</a></li>
+    <li><a href="https://llkirchner.com/bio.html">About</a></li>
+    <li><a href="https://llkirchner.com/contact.html">Contact</a></li>
+  </ul>
+  <div class="header-social">
+    <a href="https://facebook.com/llkirchner" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+    </a>
+    <a href="https://instagram.com/llkirchnerauthor" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+    <a href="https://tiktok.com/@llkirchnerauthor" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+    </a>
+  </div>
+</header>
 
-    <ul class="header-nav">
-      <li><a href="https://llkirchner.com/">Home</a></li>
-      <li><a href="https://llkirchner.com/books.html">Books</a></li>
-      <li><a href="https://llkirchner.com/bio.html">About</a></li>
-      <li><a href="https://llkirchner.com/contact.html">Contact</a></li>
-    </ul>
+<main class="bolita-page">
 
-    <div class="header-social">
-      <a href="https://facebook.com/llkirchner" aria-label="Facebook">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-        </svg>
-      </a>
+  <img src="https://raw.githubusercontent.com/llkirchner/site/main/QPC-bolita-banner-for-web-page.jpg" alt="The Queenpin Chronicles" class="bolita-image">
 
-      <a href="https://instagram.com/llkirchnerauthor" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-        </svg>
-      </a>
+  <h1>Bolita! Play Here.</h1>
+  <p class="bolita-subhead">Enter the number you drew to win&hellip;</p>
 
-      <a href="https://tiktok.com/@llkirchnerauthor" aria-label="TikTok">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/>
-        </svg>
-      </a>
-    </div>
-  </header>
+  <p class="bolita-intro">AND you&rsquo;re on the list for the &lsquo;Insiders Newsletter,&rsquo; my mostly monthly newsletter of subscriber-only giveaways, excerpts, and behind-the-scenes sneak peeks. If we&rsquo;re not playing this game live and in person, you&rsquo;re free to sign up but the game is not on&hellip;&nbsp; No purchase necessary. Unsubscribe at any time.</p>
 
-  <main class="bolita-page">
-    <img src="https://raw.githubusercontent.com/llkirchner/site/main/QPC-bolita-banner-for-web-page.jpg" alt="The Queenpin Chronicles" class="bolita-image">
+  <p class="wanna-play">Wanna Play?</p>
 
-    <h1>Bolita! Play Here.</h1>
-    <p class="bolita-subhead">Enter the number you drew to win&hellip;</p>
+  <div class="flodesk-wrapper">
+    <div id="fd-form-6921a4dab4a6c94096b1d31a"></div>
+    <script>
+      window.fd('form', {
+        formId: '6921a4dab4a6c94096b1d31a',
+        containerEl: '#fd-form-6921a4dab4a6c94096b1d31a'
+      });
+    </script>
+  </div>
 
-    <p class="bolita-intro">
-      AND you&rsquo;re on the list for the &lsquo;Insiders Newsletter,&rsquo; my mostly monthly newsletter of subscriber-only giveaways, excerpts, and behind-the-scenes sneak peeks. If we&rsquo;re not playing this game live and in person, you&rsquo;re free to sign up but the game is not on&hellip; No purchase necessary. Unsubscribe at any time.
-    </p>
+  <img src="https://raw.githubusercontent.com/llkirchner/site/main/color-bolita-balls.png" alt="Bolita numbered wooden balls" class="bolita-image">
 
-    <p class="wanna-play">Wanna Play?</p>
+  <p class="form-instructions">Filling out the form sends the number you drew to my inbox. Be sure to mark hello @ llkirchner . com as a safe sender so you don&rsquo;t miss your notification. Prizes unclaimed for more than 4 days will not be redeemable as I&rsquo;ll move on to the next entrant. Thank you for your interest!</p>
 
-    <div class="flodesk-wrapper">
-      <div id="fd-form-6921a4dab4a6c94096b1d31a"></div>
-    </div>
-
-    <img src="https://raw.githubusercontent.com/llkirchner/site/main/color-bolita-balls.png" alt="Bolita numbered wooden balls" class="bolita-image">
-
-    <p class="form-instructions">
-      Filling out the form sends the number you drew to my inbox. Be sure to mark hello @ llkirchner . com as a safe sender so you don&rsquo;t miss your notification. Prizes unclaimed for more than 4 days will not be redeemable as I&rsquo;ll move on to the next entrant. Thank you for your interest!
-    </p>
-  </main>
-
-  <script>
-    window.addEventListener('load', function () {
-      if (window.fd) {
-        window.fd('form', {
-          formId: '6921a4dab4a6c94096b1d31a',
-          containerEl: document.getElementById('fd-form-6921a4dab4a6c94096b1d31a')
-        });
-      } else {
-        console.error('Flodesk script did not load.');
-      }
-    });
-  </script>
+</main>
 
 </body>
 </html>
