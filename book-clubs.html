@@ -83,6 +83,16 @@
 
   .section-text { flex: 1; }
 
+  .book-tag {
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #c0395b;
+    margin-bottom: 10px;
+  }
+
   .section-text h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 52px;
@@ -100,12 +110,19 @@
   }
 
   .section-img {
-    flex: 0 0 340px;
+    flex: 0 0 260px;
   }
 
   .section-img img {
     width: 100%;
     display: block;
+  }
+
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e0dbd0;
+    max-width: 900px;
+    margin: 0 auto;
   }
 
   /* NAVY SECTION */
@@ -205,7 +222,7 @@
     .section-cream { padding: 48px 24px; }
     .section-cream-inner { flex-direction: column; gap: 32px; }
     .section-cream-inner.reverse { flex-direction: column; }
-    .section-img { flex: none; width: 100%; }
+    .section-img { flex: none; width: 100%; max-width: 220px; margin: 0 auto; }
     .section-navy { padding: 48px 24px; }
     .section-text h2 { font-size: 40px; }
     .section-navy h2 { font-size: 40px; }
@@ -235,8 +252,26 @@
   </div>
 </header>
 
+<!-- DISCUSSION GUIDE SECTION -->
 <div class="section-cream">
   <div class="section-cream-inner">
+    <div class="section-img">
+      <img src="https://raw.githubusercontent.com/llkirchner/site/main/the-critic-3d-cover.png" alt="Steel City Critic book cover">
+    </div>
+    <div class="section-text">
+      <p class="book-tag">Steel City Critic</p>
+      <h2>For Book Clubs</h2>
+      <p>Reading Steel City Critic with your group? Download the discussion guide for questions that dig into the story.</p>
+      <a class="btn-outline" href="https://dl.bookfunnel.com/m0sip7ooub" target="_blank" rel="noopener">Download the Discussion Guide</a>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ZOOM SECTION -->
+<div class="section-cream">
+  <div class="section-cream-inner reverse">
     <div class="section-text">
       <h2>Zoom With Your Book Club</h2>
       <p>Would you like to have L.L. Zoom with your book club? She'd love to join your group for a conversation.</p>
@@ -248,6 +283,7 @@
   </div>
 </div>
 
+<!-- BULK ORDER SECTION -->
 <div class="section-navy">
   <h2>Order in Bulk for Your Book Club</h2>
   <p>If you'd like to order copies for your whole group, get in touch for bulk order information.</p>
