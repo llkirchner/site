@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Florida Girls &mdash; 99&cent; for Women&rsquo;s Fiction Day | L.L. Kirchner</title>
+  <title>Florida Girls &mdash; 99&cent; | L.L. Kirchner</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -24,7 +24,7 @@
       line-height: 1.7;
     }
 
-    /* ── MINIMAL LOGO BAR ── */
+    /* LOGO BAR */
     .logo-bar {
       background-color: var(--cream);
       border-bottom: 1px solid rgba(26,31,60,0.1);
@@ -40,7 +40,7 @@
       text-decoration: none;
     }
 
-    /* ── HERO ── */
+    /* HERO */
     .hero {
       background-color: var(--navy);
       padding: 60px 24px 64px;
@@ -49,28 +49,39 @@
 
     .promo-label {
       font-family: 'Lato', sans-serif;
-      font-size: 0.7rem;
+      font-size: 0.68rem;
       font-weight: 700;
       letter-spacing: 0.22em;
       text-transform: uppercase;
       color: var(--pink);
-      margin-bottom: 20px;
+      margin-bottom: 28px;
     }
 
     .hero-cover {
       display: block;
       margin: 0 auto 32px;
-      width: 200px;
-      box-shadow: 0 16px 48px rgba(0,0,0,0.45);
+      width: 210px;
+      box-shadow: 0 20px 56px rgba(0,0,0,0.5);
+    }
+
+    .hero-tagline {
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(255,255,255,0.7);
+      max-width: 480px;
+      margin: 0 auto 28px;
+      line-height: 1.75;
     }
 
     .hero h1 {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(2.4rem, 7vw, 4rem);
+      font-size: clamp(2.6rem, 8vw, 4.2rem);
       letter-spacing: 0.04em;
       color: var(--white);
-      line-height: 1.05;
-      margin-bottom: 16px;
+      line-height: 1.0;
+      margin-bottom: 14px;
     }
 
     .hero h1 span {
@@ -79,43 +90,21 @@
 
     .hero-subhead {
       font-family: 'Lato', sans-serif;
-      font-size: 1rem;
+      font-size: 0.88rem;
       font-weight: 300;
-      color: rgba(255,255,255,0.75);
-      letter-spacing: 0.04em;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.06em;
     }
 
-    /* ── HOOK ── */
-    .hook {
-      background-color: var(--cream);
-      padding: 56px 24px;
-      text-align: center;
-    }
-
-    .hook-inner {
-      max-width: 560px;
-      margin: 0 auto;
-    }
-
-    .hook p {
-      font-family: 'Lato', sans-serif;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: var(--dark);
-    }
-
-    /* ── SOCIAL PROOF ── */
+    /* SOCIAL PROOF */
     .proof {
-      background-color: var(--navy);
-      padding: 60px 24px;
+      background-color: var(--cream);
+      padding: 64px 24px;
     }
 
     .proof-inner {
-      max-width: 640px;
+      max-width: 600px;
       margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
     }
 
     .proof-label {
@@ -126,59 +115,56 @@
       text-transform: uppercase;
       color: var(--pink);
       text-align: center;
-      margin-bottom: 8px;
+      margin-bottom: 32px;
+    }
+
+    .quotes {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
 
     .quote-card {
       border-left: 3px solid var(--pink);
-      padding: 16px 22px;
-      background: rgba(255,255,255,0.05);
+      padding: 14px 20px;
+      background: rgba(26,31,60,0.04);
     }
 
     .quote-card p {
       font-family: 'Lato', sans-serif;
       font-size: 1rem;
       font-style: italic;
-      font-weight: 300;
-      line-height: 1.7;
-      color: rgba(255,255,255,0.88);
+      font-weight: 400;
+      line-height: 1.65;
+      color: var(--dark);
     }
 
-    /* ── CTA ── */
+    /* CTA */
     .cta-section {
-      background-color: var(--cream);
+      background-color: var(--navy);
       padding: 64px 24px;
       text-align: center;
     }
 
     .cta-inner {
-      max-width: 480px;
+      max-width: 420px;
       margin: 0 auto;
-    }
-
-    .cta-label {
-      font-family: 'Lato', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--pink);
-      margin-bottom: 12px;
     }
 
     .cta-heading {
       font-family: 'Bebas Neue', sans-serif;
       font-size: clamp(2rem, 6vw, 3rem);
       letter-spacing: 0.04em;
-      color: var(--dark);
+      color: var(--white);
       line-height: 1.05;
       margin-bottom: 10px;
     }
 
     .cta-note {
       font-family: 'Lato', sans-serif;
-      font-size: 0.88rem;
-      color: #666;
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.55);
       margin-bottom: 32px;
     }
 
@@ -187,12 +173,12 @@
       background-color: var(--pink);
       color: var(--white);
       font-family: 'Lato', sans-serif;
-      font-size: 0.85rem;
+      font-size: 0.88rem;
       font-weight: 700;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       text-decoration: none;
-      padding: 18px 48px;
+      padding: 18px 52px;
       transition: background-color 0.2s;
     }
 
@@ -200,65 +186,88 @@
       background-color: #a02e4d;
     }
 
-    /* ── AUTHOR BIO ── */
+    /* AUTHOR BIO */
     .bio {
-      background-color: var(--navy);
-      padding: 60px 24px;
+      background-color: var(--cream);
+      padding: 64px 24px;
     }
 
     .bio-inner {
-      max-width: 560px;
+      max-width: 520px;
       margin: 0 auto;
       text-align: center;
     }
 
     .bio-photo {
-      width: 120px;
-      height: 120px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
       object-fit: cover;
       object-position: top;
       display: block;
-      margin: 0 auto 24px;
+      margin: 0 auto 20px;
       border: 3px solid var(--pink);
     }
 
     .bio-name {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       letter-spacing: 0.06em;
-      color: var(--white);
-      margin-bottom: 16px;
+      color: var(--dark);
+      margin-bottom: 14px;
     }
 
     .bio p {
       font-family: 'Lato', sans-serif;
       font-size: 0.95rem;
-      font-weight: 300;
+      font-weight: 400;
       line-height: 1.8;
-      color: rgba(255,255,255,0.75);
+      color: #444;
     }
 
-    /* ── FOOTER ── */
+    /* SERIES TEASER */
+    .series-teaser {
+      background-color: var(--cream);
+      border-top: 1px solid rgba(26,31,60,0.12);
+      padding: 28px 24px;
+      text-align: center;
+    }
+
+    .series-teaser p {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.82rem;
+      color: #888;
+      letter-spacing: 0.03em;
+    }
+
+    .series-teaser a {
+      color: var(--pink);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .series-teaser a:hover {
+      color: #a02e4d;
+    }
+
+    /* FOOTER */
     .page-footer {
       background-color: var(--navy);
-      border-top: 1px solid rgba(255,255,255,0.07);
-      padding: 24px;
+      padding: 20px 24px;
       text-align: center;
     }
 
     .page-footer p {
       font-family: 'Lato', sans-serif;
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.3);
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.28);
       letter-spacing: 0.05em;
     }
 
-    /* ── RESPONSIVE ── */
+    /* RESPONSIVE */
     @media (max-width: 480px) {
       .hero { padding: 48px 20px 52px; }
-      .hero-cover { width: 170px; }
-      .hook { padding: 48px 20px; }
+      .hero-cover { width: 175px; }
       .proof { padding: 48px 20px; }
       .cta-section { padding: 52px 20px; }
       .bio { padding: 48px 20px; }
@@ -267,45 +276,41 @@
 </head>
 <body>
 
-  <!-- LOGO BAR (no nav) -->
+  <!-- LOGO BAR -->
   <div class="logo-bar">
     <a href="https://llkirchner.com">L.L. Kirchner</a>
   </div>
 
   <!-- HERO -->
   <section class="hero">
-    <p class="promo-label">Women&rsquo;s Fiction Day &middot; One Day Only</p>
+    <p class="promo-label">Women&rsquo;s Fiction Day &middot; Limited Time</p>
     <img
       src="https://raw.githubusercontent.com/llkirchner/site/main/florida-girls%20Cover%20SM%20JH%20BLURB.jpg"
       alt="Florida Girls by L.L. Kirchner"
       class="hero-cover"
     >
+    <p class="hero-tagline">Thelma needed an escape. Kathleen needed a miracle. What they found was each other &mdash; and a way to burn it all down.</p>
     <h1>Florida Girls<br><span>Just 99&cent;</span></h1>
-    <p class="hero-subhead">For one day only. [DATE]. The Queenpin Chronicles start here.</p>
-  </section>
-
-  <!-- HOOK -->
-  <section class="hook">
-    <div class="hook-inner">
-      <p>A war bond tour full of eager young women. A sunny town with a seedy underbelly. When the Florida Girls start shooting back, will anyone survive?</p>
-    </div>
+    <p class="hero-subhead">For a limited time only. &nbsp;&middot;&nbsp; Women&rsquo;s Fiction Day. &nbsp;&middot;&nbsp; The Queenpin Chronicles start here.</p>
   </section>
 
   <!-- SOCIAL PROOF -->
   <section class="proof">
     <div class="proof-inner">
-      <p class="proof-label">What Readers Are Saying</p>
-      <div class="quote-card">
-        <p>&ldquo;The characters stuck with me.&rdquo;</p>
-      </div>
-      <div class="quote-card">
-        <p>&ldquo;Difficult to put down.&rdquo;</p>
-      </div>
-      <div class="quote-card">
-        <p>&ldquo;I was immersed in the setting.&rdquo;</p>
-      </div>
-      <div class="quote-card">
-        <p>&ldquo;Florida in the 1940s isn&rsquo;t common and I found this refreshing.&rdquo;</p>
+      <p class="proof-label">Readers Say</p>
+      <div class="quotes">
+        <div class="quote-card">
+          <p>&ldquo;The characters stuck with me.&rdquo;</p>
+        </div>
+        <div class="quote-card">
+          <p>&ldquo;Difficult to put down.&rdquo;</p>
+        </div>
+        <div class="quote-card">
+          <p>&ldquo;I was immersed in the setting.&rdquo;</p>
+        </div>
+        <div class="quote-card">
+          <p>&ldquo;Florida in the 1940s isn&rsquo;t common and I found this refreshing.&rdquo;</p>
+        </div>
       </div>
     </div>
   </section>
@@ -313,10 +318,9 @@
   <!-- CTA -->
   <section class="cta-section">
     <div class="cta-inner">
-      <p class="cta-label">Limited Time Offer</p>
       <h2 class="cta-heading">Get it while it&rsquo;s 99&cent;</h2>
-      <p class="cta-note">Kindle Countdown Deal &mdash; available for one day only.</p>
-      <a href="[INSERT Amazon KCD link]" class="btn-cta" target="_blank" rel="noopener">Get it for 99&cent;</a>
+      <p class="cta-note">Kindle Countdown Deal &mdash; limited time only.</p>
+      <a href="https://www.amazon.com/dp/B0CVQTLSWH" class="btn-cta" target="_blank" rel="noopener">Get it for 99&cent;</a>
     </div>
   </section>
 
@@ -329,9 +333,14 @@
         class="bio-photo"
       >
       <p class="bio-name">L.L. Kirchner</p>
-      <p>L.L. Kirchner writes historical crime fiction featuring women who refuse to go quietly. Her Queenpin Chronicles trilogy spans 1940s Florida, Vegas, and Havana &mdash; and the women who ran them. She lives in Florida and is a member of WFWA.</p>
+      <p>L.L. Kirchner writes historical crime fiction featuring women who refuse to go quietly. She lives in Florida and is a proud member of WFWA.</p>
     </div>
   </section>
+
+  <!-- SERIES TEASER -->
+  <div class="series-teaser">
+    <p>More from L.L. Kirchner: <a href="https://llkirchner.com">Steel City Mysteries launches June 18.</a></p>
+  </div>
 
   <!-- FOOTER -->
   <footer class="page-footer">
