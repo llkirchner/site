@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L.L. Kirchner — Crime, Suspense & Thrillers</title>
+<meta name="description" content="L.L. Kirchner writes richly atmospheric historical crime fiction and psychological suspense featuring women in dangerous worlds. Author of the Queenpin Chronicles and Steel City Mysteries.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "L.L. Kirchner",
+  "url": "https://llkirchner.com",
+  "jobTitle": "Author",
+  "description": "L.L. Kirchner writes richly atmospheric historical crime fiction and psychological suspense featuring women in dangerous worlds. She is the author of the Queenpin Chronicles, a historical crime trilogy set in 1940s America, and the Steel City Mysteries, a psychological suspense series set in 1990s Pittsburgh.",
+  "genre": ["Historical Crime Fiction", "Psychological Suspense", "Mystery", "Thriller"],
+  "knowsAbout": ["Historical fiction", "Psychological suspense", "1990s Pittsburgh", "Women in crime fiction", "Noir"],
+  "sameAs": [
+    "https://www.goodreads.com/author/show/L.L._Kirchner",
+    "https://www.amazon.com/stores/L.L.-Kirchner/author/B0CVQTLSWH",
+    "https://instagram.com/llkirchnerauthor",
+    "https://facebook.com/llkirchner",
+    "https://tiktok.com/@llkirchnerauthor"
+  ],
+  "author": [
+    {
+      "@type": "BookSeries",
+      "name": "Steel City Mysteries",
+      "description": "Psychological suspense novels set in Pittsburgh's 1990s arts world, where the wrong woman always ends up in the crosshairs.",
+      "url": "https://llkirchner.com"
+    },
+    {
+      "@type": "BookSeries",
+      "name": "Queenpin Chronicles",
+      "description": "Historical crime trilogy set in 1940s America, following women who take on the mob.",
+      "url": "https://llkirchner.com/books.html"
+    }
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f5f2eb; color: #1a1a1a; font-family: 'Lato', sans-serif; font-size: 16px; line-height: 1.7; }
+
+a { color: inherit; text-decoration: none; }
+
+.site-header {
+  background: #f5f2eb;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.header-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  color: #c0395b;
+  white-space: nowrap;
+}
+.header-nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.header-nav a {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  transition: color 0.2s;
+}
+.header-nav a:hover { color: #c0395b; }
+.header-social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.header-social a { color: #1a1a1a; display: flex; align-items: center; }
+.header-social a:hover { color: #c0395b; }
+.header-social svg { width: 20px; height: 20px; fill: currentColor; }
+
+.hero {
+  background: #1a1a2e;
+  color: #f5f2eb;
+  text-align: center;
+  padding: 5rem 2rem 4rem;
+}
+.series-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c0395b;
+  margin-bottom: 1rem;
+}
+.hero h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  letter-spacing: 0.04em;
+  color: #f5f2eb;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.hero-tagline {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-style: italic;
+  color: rgba(245,242,235,0.7);
+  margin-bottom: 1.5rem;
+}
+.hero-body {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  color: rgba(245,242,235,0.85);
+  line-height: 1.8;
+}
+
+.section {
+  padding: 5rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c0395b;
+  margin-bottom: 2.5rem;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 4rem;
+  align-items: start;
+}
+
+.book-card { }
+
+.book-cover-wrap {
+  margin-bottom: 1.5rem;
+}
+.book-cover-wrap img {
+  width: 100%;
+  max-width: 260px;
+  display: block;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.cover-placeholder {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 2/3;
+  background: #1a1a2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(245,242,235,0.4);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+}
+
+.book-tag {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #c0395b;
+  margin-bottom: 0.4rem;
+}
+.book-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.04em;
+  color: #1a1a2e;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.book-blurb {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.endorsement-wrap {
+  max-width: 720px;
+  margin: 4rem auto 0;
+}
+.endorsement-heading {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+  color: #1a1a2e;
+  margin-bottom: 1.25rem;
+}
+.endorsement-heading em { font-style: italic; }
+.endorsement {
+  border-left: 3px solid #c0395b;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+.endorsement p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.endorsement cite {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #1a1a2e;
+}
+.endorsement cite em { font-style: italic; font-weight: 400; }
+
+.btn {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.75rem;
+  border: 2px solid #c0395b;
+  color: #c0395b;
+  transition: background 0.2s, color 0.2s;
+}
+.btn:hover { background: #c0395b; color: #fff; }
+.btn-filled {
+  background: #c0395b;
+  color: #fff;
+}
+.btn-filled:hover { background: #a02e4a; border-color: #a02e4a; }
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  margin: 0 2rem;
+}
+
+.notify-section {
+  background: #1a1a2e;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.notify-section h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: 0.04em;
+  color: #f5f2eb;
+  margin-bottom: 0.5rem;
+}
+.notify-section .sub {
+  font-size: 1rem;
+  font-style: italic;
+  color: rgba(245,242,235,0.65);
+  margin-bottom: 2rem;
+}
+.notify-section .btn {
+  border-color: #c0395b;
+  color: #f5f2eb;
+  background: #c0395b;
+  font-size: 14px;
+}
+.notify-section .btn:hover { background: #a02e4a; border-color: #a02e4a; }
+
+.queenpins-cta {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+.queenpins-cta p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.bio-footer {
+  background: #1a1a2e;
+  color: #f5f2eb;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.bio-footer h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  letter-spacing: 0.04em;
+  margin-bottom: 1.5rem;
+}
+.bio-footer p {
+  max-width: 580px;
+  margin: 0 auto 1rem;
+  font-size: 1.05rem;
+  color: rgba(245,242,235,0.85);
+  line-height: 1.85;
+}
+.bio-footer .read-bio {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #c0395b;
+  border-bottom: 1px solid #c0395b;
+  padding-bottom: 2px;
+}
+.bio-footer .read-bio:hover { opacity: 0.8; }
+
+.site-footer {
+  background: #1a1a2e;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.site-footer p {
+  font-size: 12px;
+  color: rgba(245,242,235,0.35);
+  letter-spacing: 0.05em;
+}
+.footer-social { display: flex; gap: 1rem; align-items: center; }
+.footer-social a { color: rgba(245,242,235,0.5); display: flex; align-items: center; transition: color 0.2s; }
+.footer-social a:hover { color: #c0395b; }
+.footer-social svg { width: 20px; height: 20px; fill: currentColor; }
+
+@media (max-width: 768px) {
+  .header-social { display: none; }
+  .site-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .header-logo {
+    width: 100%;
+    text-align: center;
+  }
+  .header-nav {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero { padding: 3.5rem 1.5rem 3rem; }
+  .section { padding: 3.5rem 1.5rem; }
+  .book-cover-wrap img, .cover-placeholder { max-width: 200px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="https://llkirchner.com" class="header-logo">L.L. Kirchner</a>
+  <ul class="header-nav">
+    <li><a href="https://llkirchner.com/">Home</a></li>
+    <li><a href="https://llkirchner.com/books.html">Books</a></li>
+    <li><a href="https://llkirchner.com/bio.html">About</a></li>
+    <li><a href="https://llkirchner.com/contact.html">Contact</a></li>
+  </ul>
+  <div class="header-social">
+    <a href="https://facebook.com/llkirchner" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+    </a>
+    <a href="https://instagram.com/llkirchnerauthor" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+    <a href="https://tiktok.com/@llkirchnerauthor" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="series-label">You Want Immersive, Page-Turning Reads? You&rsquo;re In The Right Place.</p>
+  <h1>STEEL CITY<br>Mysteries</h1>
+  <p class="hero-tagline">When reality has &ldquo;versions&rdquo; who do you trust?</p>
+  <p class="hero-body">Psychological suspense novels set in Pittsburgh&rsquo;s 1990s arts world, where the wrong woman always ends up in the crosshairs, and the real mystery is who gets believed. For readers who love an underdog.</p>
+</section>
+
+<div class="section">
+  <p class="section-label">The Series so far</p>
+  <div class="book-grid">
+
+    <div class="book-card">
+      <div class="book-cover-wrap">
+        <img src="https://raw.githubusercontent.com/llkirchner/site/main/SCC-BURN-COVER.jpg" alt="Steel City Burn cover">
+      </div>
+      <p class="book-tag">Prequel</p>
+      <h2 class="book-title">Steel City Burn</h2>
+      <p class="book-blurb">She has a PR day job, a journalism degree she&rsquo;s not using, and one shot at landing a dream job as a critic for the city&rsquo;s hottest alt-newsweekly. What she gets instead is a disaster of a play, a theater full of people with knives out for each other, and a target on her back. Start here. Before everything goes wrong.</p>
+      <a class="btn" href="https://dl.bookfunnel.com/fdqpuohz54">Download the Free Prequel</a>
+    </div>
+
+    <div class="book-card">
+      <div class="book-cover-wrap">
+        <img src="https://raw.githubusercontent.com/llkirchner/site/main/the_critic.JPG" alt="Steel City Critic cover">
+      </div>
+      <p class="book-tag">Book One</p>
+      <h2 class="book-title">The Critic</h2>
+      <p class="book-blurb">He stole her column. Then someone poisoned him. She didn&rsquo;t do it &mdash; she&rsquo;s pretty sure &mdash; but her mental health history has a way of making her doubt herself. And if she can&rsquo;t trust her own memory, how is she supposed to prove her innocence?</p>
+      <a class="btn" href="https://books2read.com/u/bpB1GX">Available Now</a>
+    </div>
+
+  </div>
+
+  <div class="endorsement-wrap">
+    <h3 class="endorsement-heading">Praise for <em>The Critic</em></h3>
+    <blockquote class="endorsement">
+      <p>&ldquo;While investigating a murder to keep the heat off herself, you&rsquo;ll be tossed into Jessica&rsquo;s world of chaos and action in THE CRITIC. Kirchner blends Pittsburgh&rsquo;s gritty theater backdrop, red herrings galore, nonstop 90s nostalgia in this entertaining and clever thriller. The first in a series spotlighting different characters from the scene, you&rsquo;ll be waiting for the next with bated breath. <strong>A bonafide win.</strong>&rdquo;</p>
+      <cite>&mdash;Jaime Lynn Hendricks, bestselling author of <em>Their Double Lives</em></cite>
+    </blockquote>
+  </div>
+</div>
+
+<hr class="divider">
+
+<section class="notify-section" id="notify">
+  <h2>Be the First to Know</h2>
+  <p class="sub">When the next Steel City Mystery drops, you&rsquo;ll hear it here first.</p>
+  <a class="btn" href="https://llkirchner.myflodesk.com/3rmcta" target="_blank" rel="noopener">Notify Me</a>
+</section>
+
+<div class="queenpins-cta">
+  <p>Looking for the Queenpins?</p>
+  <a class="btn" href="https://llkirchner.com/books.html">See All Books</a>
+</div>
+
+<section class="bio-footer">
+  <h2>Who Am I To Write About Rebellious Women?</h2>
+  <p>I&rsquo;ve been a journalist, a story coach, an award-winning screenwriter, and even an on-air host for the Home Shopping Network. My life and work as an expat in Asia became the basis of two memoirs. And I was once simultaneously the religion editor for an LGBTQIA+ paper, the dating columnist for an alt newsweekly, and the bridal editor for a society rag.</p>
+  <p>My writing has appeared in <em>The Washington Post</em>, <em>Salon</em>, and <em>The Rumpus</em> among numerous other outlets.</p>
+  <p>I&rsquo;m also a proud grandma, longtime yoga teacher, and avid garden lady, living in Florida with my favorite husband and our best boy, Hartley.</p>
+  <p>I&rsquo;ve never believed the most powerful person in the room is the noisiest, but the one who&rsquo;s paying attention.</p>
+  <a class="read-bio" href="https://llkirchner.com/bio.html">Read Full Bio</a>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-social">
+    <a href="https://facebook.com/llkirchner" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+    </a>
+    <a href="https://instagram.com/llkirchnerauthor" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+    <a href="https://tiktok.com/@llkirchnerauthor" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+    </a>
+  </div>
+  <p>&copy; 2026 L.L. Kirchner. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
