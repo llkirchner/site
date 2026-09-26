@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Havana Girls by L.L. Kirchner | The Queenpin Chronicles, Book Three</title>
+  <meta name="description" content="Havana Girls by L.L. Kirchner: dual-timeline historical suspense set in 1950s Havana and 1978 Miami. Book Three of The Queenpin Chronicles; reads as a standalone.">
+  <link rel="canonical" href="https://llkirchner.com/havana-girls">
+
+  <!-- GEO / Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Havana Girls",
+    "author": {
+      "@type": "Person",
+      "name": "L.L. Kirchner",
+      "url": "https://llkirchner.com",
+      "sameAs": [
+        "https://www.goodreads.com/author/show/8185410.L_L_Kirchner"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lila Books"
+    },
+    "bookSeries": {
+      "@type": "BookSeries",
+      "name": "The Queenpin Chronicles"
+    },
+    "position": "3",
+    "genre": [
+      "Historical Suspense",
+      "Historical Noir",
+      "Dual-Timeline Fiction"
+    ],
+    "contentLocation": "Havana, Cuba, 1950s; Miami, Florida, 1978",
+    "description": "A dual-timeline historical saga. In 1950s Havana, nightclub owner Thelma Miles guards a dead reporter's secrets; in 1978 Miami, Sam Fontana follows clues left by her late mother. Book Three of The Queenpin Chronicles; can be read as a standalone.",
+    "datePublished": "2025-06",
+    "inLanguage": "en",
+    "url": "https://llkirchner.com/havana-girls",
+    "image": "https://llkirchner.com/havana-girls-ebook-cover.jpg",
+    "workExample": [
+      {
+        "@type": "Book",
+        "bookFormat": "https://schema.org/EBook",
+        "isbn": "9798985815283",
+        "identifier": "ASIN B0DC5T797R"
+      },
+      {
+        "@type": "Book",
+        "bookFormat": "https://schema.org/Paperback",
+        "isbn": "9798992250718"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #f5f2eb;
+      --navy: #1a1f3c;
+      --pink: #c0395b;
+      --dark: #1a1a1a;
+      --gray: #555;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+    }
+
+    /* NAV */
+    nav {
+      background: var(--cream);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      letter-spacing: 0.1em;
+      color: var(--pink);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--dark);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--pink); }
+
+    .nav-social {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .nav-social a {
+      color: var(--dark);
+      transition: color 0.2s;
+    }
+
+    .nav-social a:hover { color: var(--pink); }
+    .nav-social svg { width: 18px; height: 18px; fill: currentColor; display: block; }
+
+    /* HERO */
+    .hero {
+      background: var(--navy);
+      padding: 64px 2rem 72px;
+    }
+
+    .hero-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .hero-cover img {
+      width: 100%;
+      display: block;
+      box-shadow: 8px 12px 40px rgba(0,0,0,0.5);
+    }
+
+    .hero-text {
+      color: #fff;
+    }
+
+    .series-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--pink);
+      margin-bottom: 12px;
+    }
+
+    .hero-text h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.5rem, 8vw, 5.5rem);
+      letter-spacing: 0.04em;
+      line-height: 1;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .hero-byline {
+      font-size: 0.9rem;
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 28px;
+    }
+
+    .hero-tagline {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.5rem;
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(255,255,255,0.9);
+      line-height: 1.4;
+      margin-bottom: 36px;
+      border-left: 2px solid var(--pink);
+      padding-left: 18px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      font-family: 'Lato', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+
+    .btn-solid {
+      background: var(--pink);
+      color: #fff;
+      border: 1.5px solid var(--pink);
+    }
+
+    .btn-solid:hover {
+      background: #a02e4d;
+      border-color: #a02e4d;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.5);
+    }
+
+    .btn-outline:hover {
+      border-color: #fff;
+      color: #fff;
+    }
+
+    /* BLURB SECTION */
+    .blurb-section {
+      background: var(--cream);
+      padding: 72px 2rem;
+    }
+
+    .blurb-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--pink);
+      margin-bottom: 20px;
+    }
+
+    .blurb-text {
+      font-size: 1.1rem;
+      line-height: 1.85;
+      color: #333;
+      margin-bottom: 24px;
+    }
+
+    .comp-titles {
+      font-size: 0.95rem;
+      color: var(--gray);
+      font-style: italic;
+      line-height: 1.7;
+    }
+
+    .comp-titles em {
+      font-style: italic;
+    }
+
+    /* METADATA BLOCK — structured for GEO */
+    .meta-section {
+      background: #fff;
+      padding: 48px 2rem;
+      border-top: 1px solid rgba(0,0,0,0.08);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .meta-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 40px;
+    }
+
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .meta-key {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--pink);
+    }
+
+    .meta-value {
+      font-size: 0.9rem;
+      color: var(--dark);
+      line-height: 1.5;
+    }
+
+    /* EMAIL CAPTURE */
+    .email-section {
+      background: var(--navy);
+      padding: 72px 2rem;
+      text-align: center;
+    }
+
+    .email-section h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: 0.04em;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .email-section p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.65);
+      font-style: italic;
+      margin-bottom: 32px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .flodesk-wrapper {
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* BUY SECTION */
+    .buy-section {
+      background: var(--cream);
+      padding: 72px 2rem;
+      text-align: center;
+    }
+
+    .buy-section h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      letter-spacing: 0.04em;
+      color: var(--dark);
+      margin-bottom: 12px;
+    }
+
+    .buy-section p {
+      font-size: 0.95rem;
+      color: var(--gray);
+      margin-bottom: 32px;
+    }
+
+    .buy-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    .btn-buy-solid {
+      background: var(--pink);
+      color: #fff;
+      border: 1.5px solid var(--pink);
+    }
+
+    .btn-buy-solid:hover {
+      background: #a02e4d;
+      border-color: #a02e4d;
+    }
+
+    .btn-buy-outline {
+      background: transparent;
+      color: var(--pink);
+      border: 1.5px solid var(--pink);
+    }
+
+    .btn-buy-outline:hover {
+      background: var(--pink);
+      color: #fff;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-social a {
+      color: rgba(255,255,255,0.5);
+      transition: color 0.2s;
+    }
+
+    .footer-social a:hover { color: var(--pink); }
+    .footer-social svg { width: 20px; height: 20px; fill: currentColor; display: block; }
+
+    footer p {
+      font-size: 12px;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: 0.05em;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 680px) {
+      .nav-links { display: none; }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        text-align: center;
+      }
+
+      .hero-cover {
+        max-width: 220px;
+        margin: 0 auto;
+      }
+
+      .hero-tagline {
+        border-left: none;
+        padding-left: 0;
+        border-top: 2px solid var(--pink);
+        padding-top: 16px;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .meta-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* FORMATS */
+    .formats-section { background: var(--cream); padding: 64px 2rem; }
+    .formats-inner { max-width: 680px; margin: 0 auto; }
+    .formats-inner h2, .press-inner h2, .series-inner h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      letter-spacing: 0.04em;
+      color: var(--dark);
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .formats-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .formats-table th, .formats-table td {
+      text-align: left;
+      padding: 12px 8px;
+      border-bottom: 1px solid #e0dbd0;
+      color: #444;
+    }
+    .formats-table th {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--pink);
+    }
+
+    /* PRESS & REVIEWS */
+    .press-section { background: #fff; padding: 64px 2rem; border-top: 1px solid rgba(0,0,0,0.08); }
+    .press-inner { max-width: 680px; margin: 0 auto; }
+    .press-quote {
+      font-size: 1.05rem;
+      font-style: italic;
+      line-height: 1.75;
+      color: #333;
+      border-left: 2px solid var(--pink);
+      padding-left: 18px;
+      margin-bottom: 24px;
+    }
+    .press-quote cite {
+      display: block;
+      font-style: normal;
+      font-size: 0.85rem;
+      color: var(--gray);
+      margin-top: 8px;
+    }
+    .press-links { list-style: none; margin-top: 32px; }
+    .press-links li { padding: 10px 0; border-bottom: 1px solid #e0dbd0; font-size: 0.9rem; }
+    .press-links a { color: var(--pink); text-decoration: none; font-weight: 700; }
+    .press-links a:hover { color: #a02e4a; }
+
+    /* SERIES NAV */
+    .series-section { background: var(--cream); padding: 64px 2rem; }
+    .series-inner { max-width: 680px; margin: 0 auto; }
+    .series-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .series-grid a { text-decoration: none; color: var(--dark); text-align: center; transition: transform 0.2s; display: block; }
+    .series-grid a:hover { transform: translateY(-4px); }
+    .series-grid img { width: 100%; display: block; box-shadow: 0 6px 20px rgba(0,0,0,0.15); margin-bottom: 10px; }
+    .series-grid span { font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; }
+
+    .fallback-link { margin-top: 16px; font-size: 0.85rem; }
+    .fallback-link a { color: rgba(255,255,255,0.7); }
+
+    @media (max-width: 680px) {
+      .series-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+      .formats-table { font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="logo">L.L. Kirchner</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/books.html">Books</a></li>
+      <li><a href="/bio.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-social">
+      <a href="https://facebook.com/llkirchner" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+      <a href="https://instagram.com/llkirchnerauthor" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.98 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <a href="https://tiktok.com/@llkirchnerauthor" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-cover">
+        <img src="/havana-girls-ebook-cover.jpg" alt="Havana Girls by L.L. Kirchner book cover">
+      </div>
+      <div class="hero-text">
+        <p class="series-label">Book Three &middot; The Queenpin Chronicles</p>
+        <h1>Havana Girls</h1>
+        <p class="hero-byline">A Novel by L.L. Kirchner</p>
+        <p class="hero-tagline">Sometimes the most dangerous weapon<br>is a well-kept secret.</p>
+        <div class="hero-buttons">
+          <a href="https://www.amazon.com/dp/B0DC5T797R" class="btn btn-solid" target="_blank" rel="noopener">Buy the Ebook</a>
+          <a href="https://books2read.com/u/4NWaeG" class="btn btn-outline" target="_blank" rel="noopener">All Retailers</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESCRIPTION -->
+  <section class="blurb-section">
+    <div class="blurb-inner">
+      <p class="section-label">About the Book</p>
+      <p class="blurb-text"><strong>Dangerous secrets unite two women across generations in this immersive historical saga.</strong></p>
+      <p class="blurb-text"><strong>Havana, 1950s.</strong> Thelma Miles runs the most exclusive nightclub in pre-Revolution Cuba, carving out a precarious independence. But when her reporter friend dies in a suspicious crash on the eve of publishing a high-stakes expos&eacute;, Thelma is left holding secrets worth killing to protect.</p>
+      <p class="blurb-text"><strong>Miami, 1978.</strong> Sam Fontana, freshly divorced and adrift, discovers a sealed envelope left behind by her late mother&mdash;reporter Imogene Fuchs, who also died in a mysterious car &ldquo;accident.&rdquo; As Sam follows the clues Imogene left behind, she uncovers a chilling web of conspiracies stretching from glittering Havana nightclubs to the seedy underworld of 1970s Miami.</p>
+      <p class="blurb-text">When Sam and Thelma&rsquo;s paths collide, they face down the same powerful forces&mdash;organized crime, government cover-ups, and a family legacy of betrayal. To expose the truth, these two women must risk everything before those who silenced Imogene come back to finish the job.</p>
+      <p class="blurb-text"><em>Book 3 of The Queenpin Chronicles can be read as a gripping standalone or as the thrilling conclusion to the series.</em></p>
+      <p class="comp-titles">For fans of <em>The Alice Network</em> and <em>The Seven Husbands of Evelyn Hugo</em>.</p>
+    </div>
+  </section>
+
+  <!-- STRUCTURED METADATA — visible and GEO-readable -->
+  <div class="meta-section">
+    <div class="meta-inner">
+      <div class="meta-item">
+        <span class="meta-key">Title</span>
+        <span class="meta-value">Havana Girls</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-key">Author</span>
+        <span class="meta-value">L.L. Kirchner</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-key">Series</span>
+        <span class="meta-value">The Queenpin Chronicles, Book Three</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-key">Publication Date</span>
+        <span class="meta-value">June 2025</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-key">Genre</span>
+        <span class="meta-value">Historical Suspense &middot; Historical Noir &middot; Dual-Timeline Fiction</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-key">Setting</span>
+        <span class="meta-value">Havana, Cuba, and Miami, Florida</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-key">Time Period</span>
+        <span class="meta-value">1950s and 1978</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-key">Publisher</span>
+        <span class="meta-value">Lila Books</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORMATS & ISBNS -->
+  <section class="formats-section">
+    <div class="formats-inner">
+      <h2>Formats &amp; ISBNs</h2>
+      <table class="formats-table">
+        <thead>
+          <tr><th>Format</th><th>ISBN / ASIN</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ebook</td><td>ISBN 9798985815283 &middot; ASIN B0DC5T797R</td></tr>
+          <tr><td>Paperback</td><td>ISBN 9798992250718</td></tr>
+          <tr><td>Audiobook</td><td>Included in <em>The Queenpin Chronicles</em> audiobook omnibus, ISBN 9798349125683</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- PRESS & REVIEWS -->
+  <section class="press-section">
+    <div class="press-inner">
+      <h2>What Readers Are Saying</h2>
+      <blockquote class="press-quote">&ldquo;Kirchner&rsquo;s ability to blend historical fiction with thriller-level suspense is rare, and <em>Havana Girls</em> is her best yet.&rdquo;<cite>&mdash; Amazon reader review</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- BUY SECTION -->
+  <section class="buy-section">
+    <h2>Get Your Copy</h2>
+    <p>Ebook and paperback.</p>
+    <div class="buy-buttons">
+      <a href="https://www.amazon.com/dp/B0DC5T797R" class="btn btn-buy-solid" target="_blank" rel="noopener">Ebook on Amazon</a>
+      <a href="https://www.amazon.com/dp/B0FCRHGXSH" class="btn btn-buy-outline" target="_blank" rel="noopener">Paperback on Amazon</a>
+      <a href="https://books2read.com/u/4NWaeG" class="btn btn-buy-outline" target="_blank" rel="noopener">All Retailers</a>
+    </div>
+  </section>
+
+  <!-- SERIES NAV -->
+  <section class="series-section">
+    <div class="series-inner">
+      <h2>More in The Queenpin Chronicles</h2>
+      <div class="series-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 440px; margin: 0 auto;">
+        <a href="/florida-girls"><img src="/florida-girls%20Cover%20SM%20JH%20BLURB.jpg" alt="Florida Girls book cover"><span>Book One &middot; Florida Girls</span></a>
+        <a href="/vegas-girls"><img src="/vegas-girls%20final.jpg" alt="Vegas Girls book cover"><span>Book Two &middot; Vegas Girls</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-social">
+      <a href="https://facebook.com/llkirchner" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+      <a href="https://instagram.com/llkirchnerauthor" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.98 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <a href="https://tiktok.com/@llkirchnerauthor" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/></svg>
+      </a>
+    </div>
+    <p>&copy; 2026 L.L. Kirchner. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
