@@ -88,7 +88,7 @@ a.btn-disabled:hover { border-color: var(--sig); color: var(--navy); }
   align-items: center;
 }
 .welcome-photo img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 30%; box-shadow: 0 10px 30px rgba(0,0,0,0.18); }
-.welcome-eyebrow { font-size: 0.8rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--navy); margin-bottom: 0.5rem; }
+.welcome-eyebrow { font-size: 0.8rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--sig); margin-bottom: 0.5rem; }
 .welcome h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.4rem, 6vw, 3.8rem); line-height: 1; letter-spacing: 1px; margin-bottom: 0.9rem; }
 .welcome p.sub { color: #444; max-width: 480px; margin-bottom: 1.5rem; }
 
@@ -119,16 +119,17 @@ a.btn-disabled:hover { border-color: var(--sig); color: var(--navy); }
 /* COLLECTIONS */
 .collection { padding: 4rem 2rem; }
 .collection-head { max-width: 1000px; margin: 0 auto 2.5rem; }
-.collection-eyebrow { font-size: 0.75rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--navy); margin-bottom: 0.5rem; }
+.collection-eyebrow { font-size: 0.75rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--sig); margin-bottom: 0.5rem; }
 .collection-head h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 5vw, 2.8rem); letter-spacing: 1px; margin-bottom: 0.6rem; }
 .collection-head p { color: #555; max-width: 560px; }
+.collection-head .collection-eyebrow { color: var(--sig); }
 
 .shop-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 2rem; }
 
 .shop-card { background: #fff; box-shadow: 0 6px 22px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
 .shop-card .cover { width: 100%; aspect-ratio: 2/3; object-fit: cover; }
 .shop-card .card-body { padding: 1.4rem; display: flex; flex-direction: column; flex: 1; }
-.shop-card .card-tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: #6b6f86; margin-bottom: 0.4rem; }
+.shop-card .card-tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: var(--sig); margin-bottom: 0.4rem; }
 .shop-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.5px; margin-bottom: 0.6rem; line-height: 1.05; }
 .shop-card .desc { font-size: 0.88rem; color: #444; line-height: 1.6; margin-bottom: 1rem; }
 .more { font-size: 0.88rem; color: #444; line-height: 1.6; margin: -0.4rem 0 1.2rem; }
@@ -182,7 +183,7 @@ a.btn-disabled:hover { border-color: var(--sig); color: var(--navy); }
 .cover-trio img:nth-child(1) { transform: rotate(-6deg) translateX(18%); }
 .cover-trio img:nth-child(2) { position: relative; z-index: 2; transform: translateY(-6%); }
 .cover-trio img:nth-child(3) { transform: rotate(6deg) translateX(-18%); }
-.save-badge { display: inline-block; align-self: flex-start; background: var(--navy); color: #fff; border: 1px solid var(--sig); border-radius: 999px; font-size: 0.68rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 0.25rem 0.65rem; margin-bottom: 0.6rem; }
+.save-badge { display: inline-block; align-self: flex-start; background: var(--sig); color: #fff; border: 1px solid var(--sig); border-radius: 999px; font-size: 0.68rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 0.25rem 0.65rem; margin-bottom: 0.6rem; }
 .price .was { color: #999; font-size: 1.2rem; margin-right: 0.35rem; }
 .price .ship { font-family: 'Lato', sans-serif; font-size: 0.8rem; font-weight: 400; letter-spacing: 0; color: #666; margin-left: 0.3rem; }
 .small-biz { font-style: italic; color: #444; border-left: 2px solid var(--sig); padding-left: 0.9rem; max-width: 480px; margin-bottom: 1.5rem; }
@@ -279,7 +280,7 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
 <!-- 2. HOLIDAY GIFT BUNDLE -->
 <section class="collection" id="featured">
   <div class="collection-head">
-    <p class="collection-eyebrow">Signed by LL</p>
+    <p class="collection-eyebrow">Signed by the Author</p>
     <h2>The Holiday Gift Bundle</h2>
   </div>
   <div class="featured-grid single">
@@ -298,12 +299,12 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
         <p class="price"><s class="was">$60</s> $54 <span class="ship">+ $6 shipping</span></p>
         <div class="special-box filled">
           <span class="label">Why This Bundle Is Special</span>
-          All three paperbacks, signed and packed up by LL. A great holiday gift.
+          All three paperbacks, signed and packed up by the author. A great holiday gift.
         </div>
         <div class="card-cta">
           <!-- BUY LINK: Queenpin bundle ($54 + $6 shipping) -->
           <a href="https://buy.stripe.com/fZuaEW8tA63795721ObII00" class="btn btn-solid" target="_blank" rel="noopener">Buy the Signed Bundle</a>
-          <p class="checkout-note">Secure checkout</p>
+          <p class="checkout-note">Secure Stripe checkout</p>
         </div>
       </div>
     </div>
@@ -336,7 +337,7 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
         <div class="card-cta">
           <!-- BUY LINK: Florida Girls ($20 + $5 shipping) -->
           <a href="https://buy.stripe.com/5kQ28q6lsfDHdlnbCobII01" class="btn btn-solid" target="_blank" rel="noopener">Buy Signed Paperback</a>
-          <p class="checkout-note">Secure checkout</p>
+          <p class="checkout-note">Secure Stripe checkout</p>
         </div>
       </div>
     </div>
@@ -355,7 +356,7 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
         <div class="card-cta">
           <!-- BUY LINK: Vegas Girls ($20 + $5 shipping) -->
           <a href="https://buy.stripe.com/14AbJ0aBIbnra9bgWIbII02" class="btn btn-solid" target="_blank" rel="noopener">Buy Signed Paperback</a>
-          <p class="checkout-note">Secure checkout</p>
+          <p class="checkout-note">Secure Stripe checkout</p>
         </div>
       </div>
     </div>
@@ -374,7 +375,7 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
         <div class="card-cta">
           <!-- BUY LINK: Havana Girls ($20 + $5 shipping) -->
           <a href="https://buy.stripe.com/aFa3cu9xE9fj2GJdKwbII03" class="btn btn-solid" target="_blank" rel="noopener">Buy Signed Paperback</a>
-          <p class="checkout-note">Secure checkout</p>
+          <p class="checkout-note">Secure Stripe checkout</p>
         </div>
       </div>
     </div>
@@ -394,7 +395,7 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
   <div class="shop-grid small">
 
     <div class="shop-card">
-      <img class="cover" src="https://raw.githubusercontent.com/llkirchner/site/main/Critic-with-blurb.jpg" alt="The Critic cover">
+      <img class="cover" src="/The-Critic-final-with.blurb.jpg" alt="The Critic cover">
       <div class="card-body">
         <p class="card-tag">Book One &middot; Signed Paperback</p>
         <h3>The Critic</h3>
@@ -407,7 +408,7 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
         <div class="card-cta">
           <!-- BUY LINK: The Critic signed paperback ($20 + $5 shipping) -->
           <a href="https://buy.stripe.com/7sY14mh069fj4OR35SbII04" class="btn btn-solid" target="_blank" rel="noopener">Buy Signed Paperback</a>
-          <p class="checkout-note">Secure checkout</p>
+          <p class="checkout-note">Secure Stripe checkout</p>
         </div>
       </div>
     </div>
