@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Heiress | L.L. Kirchner</title>
-  <meta name="description" content="Pittsburgh, 1997. An heiress is missing. So is the sober companion who started dressing like her. Book Three of the Steel City Mysteries by L.L. Kirchner. Coming January 2027. Preorder now on Kindle or buy direct.">
+  <meta name="description" content="Pittsburgh, 1997. An heiress is missing. So is the sober companion who started dressing like her. Book Three of the Steel City Mysteries by L.L. Kirchner. Coming to Kindle Unlimited and paperback January 2027. Preorder the limited-edition signed ebook now.">
 
   <!-- Social share preview -->
   <meta property="og:title" content="The Heiress | L.L. Kirchner">
@@ -41,7 +41,7 @@
     "url": "https://llkirchner.com/heiress",
     "offers": {
       "@type": "Offer",
-      "url": "PREORDER-LINK-HERE",
+      "url": "https://buy.stripe.com/aFacN49xE9fj2GJbCobII05",
       "availability": "https://schema.org/PreOrder"
     },
     "keywords": "psychological suspense Pittsburgh 1990s, Steel City Mysteries, missing heiress mystery, doppelganger thriller, Gen X mystery novel"
@@ -262,6 +262,36 @@
       text-transform: uppercase;
       color: rgba(255,255,255,0.5);
       margin-bottom: 32px;
+    }
+
+    .hero-preorder {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+      margin: -14px 0 10px;
+    }
+
+    .hero-perks {
+      list-style: none;
+      margin-bottom: 28px;
+    }
+
+    .hero-perks li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .hero-perks li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.7em;
+      width: 8px;
+      height: 2px;
+      background: var(--pink);
     }
 
     .hero-buttons {
@@ -611,6 +641,7 @@
       }
 
       .hero-buttons { justify-content: center; }
+      .hero-perks { display: inline-block; text-align: left; }
       .hero-buttons .btn, .buy-buttons .btn { width: 100%; text-align: center; }
 
       .excerpt-section { padding: 56px 1.25rem 32px; }
@@ -662,10 +693,17 @@
         <h1>The Heiress</h1>
         <p class="hero-byline">A Novel by L.L. Kirchner</p>
         <p class="hero-tagline">Same hair. Same clothes.<br>Same alibi.</p>
-        <p class="hero-formats">Kindle &middot; Paperback &middot; January 2027</p>
+        <p class="hero-formats">Coming to Kindle Unlimited &amp; Paperback &middot; January 2027</p>
+        <p class="hero-preorder">Preorder now, direct from LL:</p>
+        <ul class="hero-perks">
+          <li>Limited-edition signed ebook</li>
+          <li>Includes a bonus scene</li>
+          <li>Same price as the Kindle edition</li>
+          <li>Order now and support a small business</li>
+        </ul>
         <div class="hero-buttons">
-          <!-- PREORDER: replace PREORDER-LINK-HERE with the Amazon Kindle preorder URL (3 places on this page) -->
-          <a href="PREORDER-LINK-HERE" class="btn btn-solid" target="_blank" rel="noopener">Preorder on Kindle</a>
+          <!-- DIRECT STORE: Stripe payment link, signed ebook preorder ($4.99) -->
+          <a href="https://buy.stripe.com/aFacN49xE9fj2GJbCobII05" class="btn btn-solid" target="_blank" rel="noopener">Buy Direct</a>
           <a href="#details" class="btn btn-outline-light">Book Details</a>
         </div>
       </div>
@@ -707,7 +745,7 @@
       </div>
       <div class="meta-item">
         <span class="meta-key">Formats</span>
-        <span class="meta-value">Kindle ebook &middot; Paperback</span>
+        <span class="meta-value">Kindle Unlimited &middot; Paperback &middot; Limited-edition signed ebook (direct)</span>
       </div>
       <div class="meta-item">
         <span class="meta-key">Length</span>
@@ -736,13 +774,10 @@
   <!-- BUY -->
   <section class="buy-section">
     <h2>Preorder The Heiress</h2>
-    <p>Coming January 2027. Preorder on Kindle or buy direct from LL.</p>
+    <p>Coming to Kindle Unlimited &amp; Paperback in January 2027. Preorder the limited-edition signed ebook direct from LL now.</p>
     <div class="buy-buttons">
-      <a href="PREORDER-LINK-HERE" class="btn btn-solid" target="_blank" rel="noopener">Preorder on Kindle</a>
-      <!-- DIRECT STORE: replace STRIPE-LINK-HERE with The Heiress Stripe payment link (Stripe > Payment Links > New) -->
-      <a href="STRIPE-LINK-HERE" class="btn btn-outline-light" target="_blank" rel="noopener">Buy Direct</a>
-      <!-- PAPERBACK: replace PAPERBACK-LINK-HERE with the Amazon paperback URL, or delete this button until the paperback is live -->
-      <a href="PAPERBACK-LINK-HERE" class="btn btn-outline-light" target="_blank" rel="noopener">Paperback</a>
+      <!-- DIRECT STORE: Stripe payment link, signed ebook preorder ($4.99) -->
+      <a href="https://buy.stripe.com/aFacN49xE9fj2GJbCobII05" class="btn btn-solid" target="_blank" rel="noopener">Buy Direct</a>
     </div>
     <div class="direct-perks">
       <p class="perks-label">When You Buy Direct</p>
@@ -753,7 +788,7 @@
         <li>Order now and support a small business</li>
       </ul>
     </div>
-    <p class="checkout-note">Direct orders: price shown at secure checkout</p>
+    <p class="checkout-note">Secure checkout</p>
   </section>
 
   <!-- EMAIL CAPTURE -->
