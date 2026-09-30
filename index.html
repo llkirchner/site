@@ -141,7 +141,7 @@ a { color: inherit; text-decoration: none; }
 
 .book-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
   gap: 4rem;
   align-items: start;
 }
@@ -160,7 +160,7 @@ a { color: inherit; text-decoration: none; }
 .cover-placeholder {
   width: 100%;
   max-width: 260px;
-  aspect-ratio: 2/3;
+  aspect-ratio: 5/8;
   background: #1a1a2e;
   display: flex;
   align-items: center;
@@ -192,6 +192,12 @@ a { color: inherit; text-decoration: none; }
   color: #333;
   margin-bottom: 1.5rem;
 }
+.blurb-long p { margin-bottom: 0.8rem; }
+.blurb-long p:last-child { margin-bottom: 0; }
+.more summary { cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #1a1a2e; list-style: none; margin-bottom: 0.8rem; }
+.more summary::-webkit-details-marker { display: none; }
+.more summary::after { content: ' +'; color: #c0395b; }
+.more[open] summary::after { content: ' \2212'; }
 
 .endorsement-wrap {
   max-width: 720px;
@@ -419,6 +425,41 @@ a { color: inherit; text-decoration: none; }
       <h2 class="book-title">The Critic</h2>
       <p class="book-blurb">He stole her column. Then someone poisoned him. She didn&rsquo;t do it &mdash; she&rsquo;s pretty sure &mdash; but her mental health history has a way of making her doubt herself. And if she can&rsquo;t trust her own memory, how is she supposed to prove her innocence?</p>
       <a class="btn" href="https://books2read.com/u/bpB1GX">Available Now</a>
+    </div>
+
+    <div class="book-card">
+      <div class="book-cover-wrap">
+        <img src="/NETC-FINAL.jpg" alt="Now Entering the Chat cover">
+      </div>
+      <p class="book-tag">Book Two &middot; November 19</p>
+      <h2 class="book-title">Now Entering the Chat</h2>
+      <div class="book-blurb blurb-long">
+        <p><strong>She was hired to protect him. She stayed to bury him.</strong></p>
+        <details class="more">
+          <summary>Read more</summary>
+          <p>Pittsburgh, 1996. Jessica Greer survived a media scandal, now she&rsquo;s turning it into a crisis communications business. But can she handle the repercussions?</p>
+          <p>When star professor Richard Holiday is accused of sexually assaulting a freshman, the university hires Jessica to stop the story before it destroys their multimillion-dollar fundraising campaign. Her best friend and business partner, Sofia, wants no part of it. But Jessica forges ahead, believing they can do some good.</p>
+          <p>Jessica soon proves that when it comes to making ugly stories disappear, she&rsquo;s very good.</p>
+          <p>Maybe too good.</p>
+          <p>When evidence appears to clear Richard, the university declares victory. And the public turns on the victim.</p>
+          <p>Then she dies.</p>
+          <p>Now Jessica is determined to tear apart the story she helped sell.</p>
+          <p>Anonymous Pittsburgh chat rooms buzz with gossip. A television reporter is digging for the story of her career. And Jessica begins to suspect that absolving Richard didn&rsquo;t fix the problem, only buried the part that mattered.</p>
+          <p>But if Richard isn&rsquo;t the real story, who is?</p>
+        </details>
+      </div>
+      <a class="btn" href="https://llkirchner.com/chat-preorder" target="_blank" rel="noopener">Preorder on Kindle</a>
+    </div>
+
+    <div class="book-card">
+      <div class="book-cover-wrap">
+        <!-- COVER: when ready, replace this div with <img src="/[COVER FILE]" alt="The Heiress cover"> -->
+        <div class="cover-placeholder">The Heiress</div>
+      </div>
+      <p class="book-tag">Book Three &middot; January 2027</p>
+      <h2 class="book-title">The Heiress</h2>
+      <p class="book-blurb"><strong>Same hair. Same clothes. Same alibi.</strong></p>
+      <a class="btn" href="https://llkirchner.com/heiress">Coming Soon</a>
     </div>
 
   </div>
