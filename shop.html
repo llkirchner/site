@@ -27,6 +27,7 @@
   --pink-dark: #a02e4d;
   --dark: #1a1a1a;
   --sig: #8E0551;
+  --sig-dark: #6E0440;
 }
 html { scroll-behavior: smooth; }
 body { background: var(--cream); color: var(--dark); font-family: 'Lato', sans-serif; font-size: 16px; line-height: 1.7; }
@@ -70,12 +71,12 @@ nav {
   border-radius: 999px;
   cursor: pointer;
 }
-.btn-solid { background: #fff; color: var(--navy); border-color: var(--sig); }
-.btn-solid:hover { background: var(--sig); color: #fff; border-color: var(--sig); }
-.btn-outline-pink { background: transparent; color: var(--navy); border-color: var(--sig); }
-.btn-outline-pink:hover { background: var(--sig); color: #fff; }
+.btn-solid { background: var(--sig); color: #fff; border-color: transparent; }
+.btn-solid:hover { background: var(--sig-dark); color: #fff; border-color: transparent; }
+.btn-outline-pink { background: var(--sig); color: #fff; border-color: transparent; }
+.btn-outline-pink:hover { background: var(--sig-dark); color: #fff; }
 .btn-disabled { background: transparent; color: #918c7d; border-color: #cfc9bc; cursor: default; }
-a.btn-disabled:hover { border-color: var(--sig); color: var(--navy); }
+a.btn-disabled:hover { border-color: #cfc9bc; color: #918c7d; }
 
 /* 1. COMPACT WELCOME */
 .welcome {
@@ -193,6 +194,11 @@ a.btn-disabled:hover { border-color: var(--sig); color: var(--navy); }
 /* 4. NEXT RELEASE */
 .release-card { max-width: 1000px; margin: 0 auto; }
 .release-date { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 1px; color: var(--navy); margin-bottom: 0.9rem; }
+.release-date.coming { font-weight: 400; font-style: italic; }
+.shop-card .card-tag .nocaps { text-transform: none; letter-spacing: 0.3px; }
+.praise { font-size: 0.75rem; line-height: 1.5; color: #555; margin: -0.3rem 0 1rem; }
+.praise .praise-label { display: block; font-weight: 700; font-size: 0.65rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--sig); margin-bottom: 0.2rem; }
+.card-cta.inline { margin-top: 0; margin-bottom: 1.2rem; }
 
 /* 6. BUYING QUESTIONS */
 .faq { max-width: 1000px; margin: 0 auto; }
@@ -296,13 +302,13 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
         <h3>Florida Girls, Vegas Girls &amp; Havana Girls</h3>
         <p class="desc">It starts with a war bond tour. It ends with a mob war that spans Florida, Vegas, and Havana.</p>
         <span class="save-badge">Save 10%</span>
-        <p class="price"><s class="was">$60</s> $54 <span class="ship">+ $6 shipping</span></p>
+        <p class="price"><s class="was">$60</s> $54 <span class="ship">+ $3 shipping</span></p>
         <div class="special-box filled">
           <span class="label">Why This Bundle Is Special</span>
           All three paperbacks, signed and packed up by the author. A great holiday gift.
         </div>
         <div class="card-cta">
-          <!-- BUY LINK: Queenpin bundle ($54 + $6 shipping) -->
+          <!-- BUY LINK: Queenpin bundle ($54 + $3 shipping) -->
           <a href="https://buy.stripe.com/fZuaEW8tA63795721ObII00" class="btn btn-solid" target="_blank" rel="noopener">Buy the Signed Bundle</a>
           <p class="checkout-note">Secure Stripe checkout</p>
         </div>
@@ -329,13 +335,13 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
         <p class="card-tag">Book One &middot; Signed Paperback</p>
         <h3>Florida Girls</h3>
         <p class="desc">It starts with a war bond tour. It ends with a mob war.</p>
-        <p class="price">$20 <span class="ship">+ $5 shipping</span></p>
+        <p class="price">$20 <span class="ship">+ $1 shipping</span></p>
         <div class="special-box filled">
           <span class="label">Why This Edition Is Special</span>
           Your exclusive Reader's Edition features LL's signature and a bonus read.
         </div>
         <div class="card-cta">
-          <!-- BUY LINK: Florida Girls ($20 + $5 shipping) -->
+          <!-- BUY LINK: Florida Girls ($20 + $1 shipping) -->
           <a href="https://buy.stripe.com/5kQ28q6lsfDHdlnbCobII01" class="btn btn-solid" target="_blank" rel="noopener">Buy Signed Paperback</a>
           <p class="checkout-note">Secure Stripe checkout</p>
         </div>
@@ -348,13 +354,13 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
         <p class="card-tag">Book Two &middot; Signed Paperback</p>
         <h3>Vegas Girls</h3>
         <p class="desc">Sin City, 1946. A showgirl's revenge has a body count.</p>
-        <p class="price">$20 <span class="ship">+ $5 shipping</span></p>
+        <p class="price">$20 <span class="ship">+ $1 shipping</span></p>
         <div class="special-box filled">
           <span class="label">Why This Edition Is Special</span>
           Your exclusive Reader's Edition features LL's signature.
         </div>
         <div class="card-cta">
-          <!-- BUY LINK: Vegas Girls ($20 + $5 shipping) -->
+          <!-- BUY LINK: Vegas Girls ($20 + $1 shipping) -->
           <a href="https://buy.stripe.com/14AbJ0aBIbnra9bgWIbII02" class="btn btn-solid" target="_blank" rel="noopener">Buy Signed Paperback</a>
           <p class="checkout-note">Secure Stripe checkout</p>
         </div>
@@ -367,13 +373,13 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
         <p class="card-tag">Book Three &middot; Signed Paperback</p>
         <h3>Havana Girls</h3>
         <p class="desc">A gripping dual-timeline historical suspense set in 1950s Havana and 1978 Florida.</p>
-        <p class="price">$20 <span class="ship">+ $5 shipping</span></p>
+        <p class="price">$20 <span class="ship">+ $1 shipping</span></p>
         <div class="special-box filled">
           <span class="label">Why This Edition Is Special</span>
           Your exclusive Reader's Edition features LL's signature.
         </div>
         <div class="card-cta">
-          <!-- BUY LINK: Havana Girls ($20 + $5 shipping) -->
+          <!-- BUY LINK: Havana Girls ($20 + $1 shipping) -->
           <a href="https://buy.stripe.com/aFa3cu9xE9fj2GJdKwbII03" class="btn btn-solid" target="_blank" rel="noopener">Buy Signed Paperback</a>
           <p class="checkout-note">Secure Stripe checkout</p>
         </div>
@@ -395,31 +401,21 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
   <div class="shop-grid small">
 
     <div class="shop-card">
-      <img class="cover" src="/The-Critic-final-with.blurb.jpg" alt="The Critic cover">
+      <img class="cover" src="/NETC-FINAL.jpg" alt="Now Entering the Chat cover">
       <div class="card-body">
-        <p class="card-tag">Book One &middot; Signed Paperback</p>
-        <h3>The Critic</h3>
-        <p class="desc">He took her column. Then someone poisoned him. She didn't do it &mdash; she's pretty sure &mdash; but her mental health history has a way of making her doubt herself. And if she can't trust her own memory, how is she supposed to prove her innocence?</p>
-        <p class="price">$20 <span class="ship">+ $5 shipping</span></p>
+        <p class="card-tag">Limited Edition Signed Preorder | <span class="nocaps">Yes, I signed an e-book</span></p>
+        <h3>Now Entering the Chat</h3>
+        <p class="release-date coming">Coming November 19</p>
+        <p class="desc"><strong>She was hired to protect him. She stayed to bury him.</strong></p>
+        <p class="price">$4.99</p>
+        <div class="card-cta inline">
+          <a href="https://buy.stripe.com/aFa4gyfW28bfgxz9ugbII06" class="btn btn-solid" target="_blank" rel="noopener">Preorder Signed E-book</a>
+          <p class="checkout-note">Secure Stripe checkout</p>
+        </div>
         <div class="special-box filled">
           <span class="label">Why This Edition Is Special</span>
           Your exclusive Reader's Edition features LL's signature and a bonus read.
         </div>
-        <div class="card-cta">
-          <!-- BUY LINK: The Critic signed paperback ($20 + $5 shipping) -->
-          <a href="https://buy.stripe.com/7sY14mh069fj4OR35SbII04" class="btn btn-solid" target="_blank" rel="noopener">Buy Signed Paperback</a>
-          <p class="checkout-note">Secure Stripe checkout</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="shop-card">
-      <img class="cover" src="/NETC-FINAL.jpg" alt="Now Entering the Chat cover">
-      <div class="card-body">
-        <p class="card-tag">Book Two &middot; Kindle</p>
-        <h3>Now Entering the Chat</h3>
-        <p class="release-date">November 19</p>
-        <p class="desc"><strong>She was hired to protect him. She stayed to bury him.</strong></p>
         <details class="more">
           <summary>Read more</summary>
           <p>Pittsburgh, 1996. Jessica Greer survived a media scandal, now she&rsquo;s turning it into a crisis communications business. But can she handle the repercussions?</p>
@@ -432,8 +428,20 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
           <p>Anonymous Pittsburgh chat rooms buzz with gossip. A television reporter is digging for the story of her career. And Jessica begins to suspect that absolving Richard didn&rsquo;t fix the problem, only buried the part that mattered.</p>
           <p>But if Richard isn&rsquo;t the real story, who is?</p>
         </details>
+      </div>
+    </div>
+
+    <div class="shop-card">
+      <img class="cover" src="/The-Critic-final-with.blurb.jpg" alt="The Critic cover">
+      <div class="card-body">
+        <h3>The Critic</h3>
+        <p class="desc">He took her column. Then someone poisoned him. She didn't do it &mdash; she's pretty sure &mdash; but her mental health history has a way of making her doubt herself. And if she can't trust her own memory, how is she supposed to prove her innocence?</p>
+        <p class="praise"><span class="praise-label">Praise for The Critic</span>&ldquo;red herrings galore, and nonstop &rsquo;90s nostalgia in this entertaining, clever thriller.&hellip; A bona fide win.&rdquo; &mdash;Jaime Lynn Hendricks, <em>Their Double Lives</em></p>
+        <p class="price">$20 <span class="ship">+ $1 shipping</span></p>
         <div class="card-cta">
-          <a href="https://llkirchner.com/chat-preorder" class="btn btn-solid" target="_blank" rel="noopener">Preorder on Kindle</a>
+          <!-- BUY LINK: The Critic signed paperback ($20 + $1 shipping) -->
+          <a href="https://buy.stripe.com/7sY14mh069fj4OR35SbII04" class="btn btn-solid" target="_blank" rel="noopener">Buy Signed Paperback</a>
+          <p class="checkout-note">Secure Stripe checkout</p>
         </div>
       </div>
     </div>
@@ -508,7 +516,7 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
     <details>
       <summary>How much is shipping, and how long does it take?</summary>
       <!-- ANSWER: add delivery timing in place of [DELIVERY TIME] -->
-      <p>Shipping is $5 for a single book and $6 for the Queenpin gift bundle. [DELIVERY TIME]</p>
+      <p>Shipping is $1 for a single book and $3 for the Queenpin gift bundle. [DELIVERY TIME]</p>
     </details>
     <details>
       <summary>Where do you ship?</summary>
