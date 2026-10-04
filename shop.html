@@ -175,6 +175,7 @@ a.btn-disabled:hover { border-color: #cfc9bc; color: #918c7d; }
 .cover-ph::before { content: ""; position: absolute; inset: 10px; border: 1px solid rgba(142,5,81,0.6); }
 .cover-ph .ph-series { font-size: 0.6rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(245,242,235,0.6); margin-bottom: 0.8rem; }
 .cover-ph .ph-title { font-family: 'Bebas Neue', sans-serif; font-size: 2.4rem; line-height: 0.95; letter-spacing: 1px; color: var(--cream); }
+.cover-ph.fill { aspect-ratio: auto; flex: 1; min-height: 320px; }
 .cover-ph .ph-author { font-size: 0.62rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(245,242,235,0.6); margin-top: 1rem; }
 
 /* BUNDLE + PRICING */
@@ -501,6 +502,13 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
   <div class="shop-grid small">
 
     <div class="shop-card">
+      <div class="cover-ph fill" role="img" aria-label="This section coming soon">
+        <p class="ph-series">This section</p>
+        <p class="ph-title">Coming<br>Soon</p>
+      </div>
+    </div>
+
+    <div class="shop-card">
       <img class="cover" src="https://raw.githubusercontent.com/llkirchner/site/main/5.25%20ALC%20COVER.png" alt="American Lady Creature cover">
       <div class="card-body">
         <p class="card-tag">Memoir</p>
@@ -521,17 +529,6 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
         <div class="card-cta">
           <span class="btn btn-disabled" aria-disabled="true">Coming Soon</span>
         </div>
-      </div>
-    </div>
-
-    <div class="shop-card">
-      <div class="cover-ph" role="img" aria-label="Coming soon">
-        <p class="ph-series">The Memoirs</p>
-        <p class="ph-title">Coming<br>Soon</p>
-        <p class="ph-author">L.L. Kirchner</p>
-      </div>
-      <div class="card-body">
-        <p class="card-tag">Stay tuned</p>
       </div>
     </div>
 
