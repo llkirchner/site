@@ -199,6 +199,39 @@
       color: var(--white);
     }
 
+    /* SERIES GROUPS */
+    .series-group {
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+    }
+
+    .series-heading {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: 0.05em;
+      color: var(--navy);
+      line-height: 1;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--pink);
+      margin-bottom: -30px;
+    }
+
+    .series-divider {
+      border: none;
+      border-top: 1px solid rgba(26,31,54,0.15);
+      max-width: 860px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .coming-note {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      font-style: italic;
+      color: var(--navy);
+    }
+
     /* DIVIDER */
     .divider {
       border: none;
@@ -286,12 +319,70 @@
   <!-- HERO -->
   <section class="hero">
     <h1>Thanks for Reading!</h1>
-    <p>If you enjoyed the book, I'd be so grateful if you'd leave a quick review. Reader feedback helps others discover the series&mdash;and helps me keep writing.</p>
+    <p>If you enjoyed the book, I'd be so grateful if you'd leave a quick review. Reader feedback helps others discover my books&mdash;and helps me keep writing.</p>
   </section>
 
   <!-- BOOKS -->
   <section class="books-section">
     <div class="books-inner">
+
+      <!-- STEEL CITY SUSPENSE -->
+      <div class="series-group" id="steel-city">
+        <h2 class="series-heading">Steel City Suspense</h2>
+
+      <div class="book-block">
+        <div class="book-cover">
+          <img src="The-Critic-final-with.blurb.jpg" alt="The Critic cover">
+        </div>
+        <div class="book-info">
+          <p class="book-label">Book One &middot; Steel City Suspense</p>
+          <h3 class="book-title">The Critic</h3>
+          <p class="book-blurb">He stole her column. Then someone poisoned him. She didn&rsquo;t do it &mdash; she&rsquo;s pretty sure.</p>
+          <p class="review-prompt">Leave a review at your favorite site</p>
+          <div class="review-links">
+            <a class="review-link" href="https://www.amazon.com/review/create-review?asin=B0DFSJZFHC" target="_blank" rel="noopener">Amazon</a>
+            <a class="review-link" href="https://www.goodreads.com/search?q=The+Critic+L.L.+Kirchner" target="_blank" rel="noopener">Goodreads</a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="book-block reverse">
+        <div class="book-cover">
+          <img src="NETC-FINAL.jpg" alt="Now Entering the Chat cover">
+        </div>
+        <div class="book-info">
+          <p class="book-label">Book Two &middot; Steel City Suspense</p>
+          <h3 class="book-title">Now Entering the Chat</h3>
+          <p class="book-blurb">She was hired to protect him. She stayed to bury the real villain.</p>
+          <p class="coming-note">Coming Nov 19. Review links open on release day.</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="book-block">
+        <div class="book-cover">
+          <img src="SCC-BURN-COVER.jpg" alt="Steel City Burn cover">
+        </div>
+        <div class="book-info">
+          <p class="book-label">Free Prequel &middot; Steel City Suspense</p>
+          <h3 class="book-title">Steel City Burn</h3>
+          <p class="book-blurb">The free prequel. Start here. Before everything goes wrong.</p>
+          <p class="review-prompt">Leave a review at your favorite site</p>
+          <div class="review-links">
+            <a class="review-link" href="https://www.goodreads.com/search?q=Steel+City+Burn+L.L.+Kirchner" target="_blank" rel="noopener">Goodreads</a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <hr class="series-divider">
+
+      <!-- THE QUEENPIN CHRONICLES -->
+      <div class="series-group" id="queenpin">
+        <h2 class="series-heading">The Queenpin Chronicles</h2>
 
       <!-- FLORIDA GIRLS -->
       <div class="book-block">
@@ -300,7 +391,7 @@
         </div>
         <div class="book-info">
           <p class="book-label">Book One &middot; The Queenpin Chronicles</p>
-          <h2 class="book-title">Florida Girls</h2>
+          <h3 class="book-title">Florida Girls</h3>
           <p class="book-blurb">It starts with a war bond tour. It ends with a mob war.</p>
           <p class="review-prompt">Leave a review at your favorite site</p>
           <div class="review-links">
@@ -321,7 +412,7 @@
         </div>
         <div class="book-info">
           <p class="book-label">Book Two &middot; The Queenpin Chronicles</p>
-          <h2 class="book-title">Vegas Girls</h2>
+          <h3 class="book-title">Vegas Girls</h3>
           <p class="book-blurb">Sin City, 1946. A showgirl's revenge has a body count.</p>
           <p class="review-prompt">Leave a review at your favorite site</p>
           <div class="review-links">
@@ -342,7 +433,7 @@
         </div>
         <div class="book-info">
           <p class="book-label">Book Three &middot; The Queenpin Chronicles</p>
-          <h2 class="book-title">Havana Girls</h2>
+          <h3 class="book-title">Havana Girls</h3>
           <p class="book-blurb">A gripping dual-timeline historical suspense set in 1950s Havana and 1978 Florida.</p>
           <p class="review-prompt">Leave a review at your favorite site</p>
           <div class="review-links">
@@ -353,6 +444,47 @@
           </div>
         </div>
       </div>
+      </div>
+
+      <hr class="series-divider">
+
+      <!-- MEMOIRS -->
+      <div class="series-group" id="memoirs">
+        <h2 class="series-heading">Memoirs</h2>
+
+      <div class="book-block">
+        <div class="book-cover">
+          <img src="5.25%20ALC%20COVER.png" alt="American Lady Creature cover">
+        </div>
+        <div class="book-info">
+          <p class="book-label">Memoir</p>
+          <h3 class="book-title">American Lady Creature</h3>
+          <p class="book-blurb">A darkly comedic memoir of transformation after divorce and early menopause in Qatar. A journey from seeking approval to self-love.</p>
+          <p class="review-prompt">Leave a review at your favorite site</p>
+          <div class="review-links">
+            <a class="review-link" href="https://www.goodreads.com/search?q=American+Lady+Creature+L.L.+Kirchner" target="_blank" rel="noopener">Goodreads</a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="book-block reverse">
+        <div class="book-cover">
+          <img src="blissful-final.png" alt="Blissful Thinking cover">
+        </div>
+        <div class="book-info">
+          <p class="book-label">Memoir</p>
+          <h3 class="book-title">Blissful Thinking</h3>
+          <p class="book-blurb">From yoga retreats to a sex cult &mdash; one woman&rsquo;s spiritual journey to find healing after heartbreak. A search for radical honesty.</p>
+          <p class="review-prompt">Leave a review at your favorite site</p>
+          <div class="review-links">
+            <a class="review-link" href="https://www.goodreads.com/search?q=Blissful+Thinking+L.L.+Kirchner" target="_blank" rel="noopener">Goodreads</a>
+          </div>
+        </div>
+      </div>
+      </div>
+
 
     </div>
   </section>
