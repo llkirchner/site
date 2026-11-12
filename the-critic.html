@@ -102,6 +102,9 @@ footer p { font-size: 12px; color: #888888; letter-spacing: 0.05em; }
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; }
 .hero .btn-outline { color: #fff; border-color: rgba(255,255,255,0.5); }
 .hero .btn-outline:hover { background: transparent; border-color: #fff; }
+.hero-note { font-size: 0.9rem; color: rgba(255,255,255,0.75); margin-top: 18px; line-height: 1.6; }
+.hero-note a { color: #fff; border-bottom: 1px solid currentColor; }
+.hero-note a:hover { color: var(--pink); }
 
 .section { padding: 64px 2rem; }
 .section-inner { max-width: 720px; margin: 0 auto; }
@@ -185,9 +188,17 @@ blockquote cite { display: block; margin-top: 8px; font-style: normal; font-size
         <p class="hero-byline">By L.L. Kirchner</p>
         <p class="hero-tagline">She didn&rsquo;t do it.<br>Right?</p>
         <div class="hero-buttons">
-          <a href="https://books2read.com/u/bpB1GX" class="btn btn-solid" target="_blank" rel="noopener">Buy the Book</a>
-          <a href="#buy" class="btn btn-outline">All Formats</a>
+          <a href="https://buy.stripe.com/fZu9AT4Pmb080Tq0QE9k400" class="btn btn-solid" target="_blank" rel="noopener">Buy the Ebook</a>
+          <a href="https://books2read.com/u/b5dzd7" class="btn btn-outline" target="_blank" rel="noopener">All Formats</a>
         </div>
+        <p class="hero-note">*Audiobook coming soon, <a href="#audiobook-notify" id="audiobook-notify">click here</a> if you&rsquo;d like to be notified when it&rsquo;s available.</p>
+        <p class="hero-note"><a href="/book-clubs.html">Book club discussion guide</a></p>
+        <script>
+          document.getElementById('audiobook-notify').addEventListener('click', function(e) {
+            e.preventDefault();
+            if (window.fd) { window.fd('form', { formId: '6af5eebc2879443686f7e331' }); }
+          });
+        </script>
       </div>
     </div>
   </section>
@@ -195,9 +206,13 @@ blockquote cite { display: block; margin-top: 8px; font-style: normal; font-size
   <section class="section">
     <div class="section-inner desc">
       <h2>About the Book</h2>
-        <p>Pittsburgh, 1995. Ricin in the mail. A stolen byline. The FBI at her door. A blackout she can&rsquo;t explain.</p>
-        <p>Jessica Greer, PR executive by day and alt-newsweekly critic by night, just lost her column and she wants it back. Instead she gets a poisoned rival, a federal case, and a headline she never asked for: The Mail Murderess.</p>
-        <p class="comps">For readers of Gillian Flynn, Shari Lapena, and Megan Abbott.</p>
+        <p>She thought losing her job to her rival was going to be the worst part of her day. Then the FBI showed up.</p>
+        <p>Pittsburgh, 1995. Jessica Greer just lost her theater column to her biggest rival. When he collapses at his new desk after eating a ricin-laced brownie&mdash;she becomes the FBI&rsquo;s prime suspect.</p>
+        <p>The evidence points to her. The press decides she&rsquo;s &lsquo;The Mail Murderess.&rsquo; And she has a tendency to show off her unsettling knowledge of Law &amp; Order plots to the wrong people.</p>
+        <p>Staying quiet would be smart. Instead, Jessica starts hunting for another suspect, with her mother and best friend refusing to stay out of it. Her every move makes her look guiltier while the real killer is at large.</p>
+        <p>Can she find them before the FBI buys the lie and makes the story true?</p>
+        <blockquote><p>&ldquo;Kirchner blends Pittsburgh&rsquo;s gritty theater backdrop and nonstop &rsquo;90s nostalgia in this entertaining, clever thriller.&hellip; A bona fide win.&rdquo;</p><cite>&mdash;Jaime Lynn Hendricks, bestselling author of <em>Their Double Lives</em></cite></blockquote>
+        <p class="comps">For readers who crave the high-stakes crisis deception of <em>First Lie Wins</em>, the toxic media spin of <em>None of This Is True</em>, and the sweeping, layered institutional dread of <em>The God of the Woods</em>.</p>
     </div>
   </section>
 
@@ -224,20 +239,6 @@ blockquote cite { display: block; margin-top: 8px; font-style: normal; font-size
           </tbody>
         </table>
       </div>
-    </div>
-  </section>
-
-  <section class="section buy" id="buy">
-    <div class="section-inner">
-      <h2>Get Your Copy</h2>
-      <p class="buy-note">Ebook and paperback, plus signed copies.</p>
-      <div class="buy-buttons">
-        <a href="https://books2read.com/u/bpB1GX" class="btn btn-solid" target="_blank" rel="noopener">All Retailers</a>
-        <a href="https://www.amazon.com/dp/B0DFSJZFHC" class="btn btn-outline" target="_blank" rel="noopener">Kindle</a>
-        <a href="https://www.amazon.com/dp/B0GYDHMB1L" class="btn btn-outline" target="_blank" rel="noopener">Paperback</a>
-        <a href="https://www.pagesandperks.com/product/the-critic-by-l-l-kirchner/6CYWKSBNWKAWOWKQ64V2P5PZ" class="btn btn-outline" target="_blank" rel="noopener">Signed Copy &mdash; Pages &amp; Perks</a>
-      </div>
-      <p class="buy-extra"><a href="/shop.html#steel-city">Signed Reader&rsquo;s Edition from L.L.&rsquo;s shop</a> &middot; <a href="/book-clubs.html">Book club discussion guide</a></p>
     </div>
   </section>
 
