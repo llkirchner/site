@@ -59,7 +59,27 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <script src="https://assets.flodesk.com/universal.js"></script>
+  <script>
+    (function(w, d, t, h, s, n) {
+      w.FlodeskObject = n;
+      var fn = function() {
+        (w[n].q = w[n].q || []).push(arguments);
+      };
+      w[n] = w[n] || fn;
+      var f = d.getElementsByTagName(t)[0];
+      var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+      var sm = d.createElement(t);
+      sm.async = true;
+      sm.type = 'module';
+      sm.src = h + s + '.mjs' + v;
+      f.parentNode.insertBefore(sm, f);
+      var sn = d.createElement(t);
+      sn.async = true;
+      sn.noModule = true;
+      sn.src = h + s + '.js' + v;
+      f.parentNode.insertBefore(sn, f);
+    })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+  </script>
   <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root { --cream: #f5f2eb; --navy: #1a1f3c; --pink: #c0395b; --pink-hover: #a02e4a; --dark: #1a1a1a; --body: #444444; --border: #e0dbd0; }
@@ -189,10 +209,13 @@ blockquote cite { display: block; margin-top: 8px; font-style: normal; font-size
         <p class="hero-tagline">She didn&rsquo;t do it.<br>Right?</p>
         <div class="hero-buttons">
           <a href="https://buy.stripe.com/fZu9AT4Pmb080Tq0QE9k400" class="btn btn-solid" target="_blank" rel="noopener">Buy the Ebook</a>
-          <a href="https://books2read.com/u/b5dzd7" class="btn btn-outline" target="_blank" rel="noopener">All Formats</a>
+          <a href="https://buy.stripe.com/9B69ASeRY4Z34OR7m8bII0c" class="btn btn-outline" target="_blank" rel="noopener">Signed Paperbacks</a>
         </div>
         <p class="hero-note">*Audiobook coming soon, <a href="#audiobook-notify" id="audiobook-notify">click here</a> if you&rsquo;d like to be notified when it&rsquo;s available.</p>
         <p class="hero-note"><a href="/book-clubs.html">Book club discussion guide</a></p>
+        <div class="hero-buttons" style="margin-top:18px;">
+          <a href="https://books2read.com/u/b5dzd7" class="btn btn-outline" target="_blank" rel="noopener">All Formats</a>
+        </div>
         <script>
           document.getElementById('audiobook-notify').addEventListener('click', function(e) {
             e.preventDefault();
