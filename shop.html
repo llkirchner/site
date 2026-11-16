@@ -16,6 +16,33 @@
 <meta property="og:image:alt" content="L.L. Kirchner signing books at her table at an outdoor book festival">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://llkirchner.com/LL_at_Water_Street.jpg">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '318825444943664');
+fbq('track', 'PageView');
+document.addEventListener('click', function(e) {
+  var a = e.target.closest('a[href*="buy.stripe.com"]');
+  if (!a) return;
+  var sec = a.closest('section');
+  var card = a.closest('.shop-card, .ebook-thumb');
+  var title = card && card.querySelector('h3, h4');
+  var series = { 'preorder': 'Steel City Suspense', 'steel-city': 'Steel City Suspense', 'featured': 'Queenpin Chronicles', 'queenpin': 'Queenpin Chronicles' };
+  fbq('track', 'InitiateCheckout', {
+    content_name: title ? title.textContent.trim() : '',
+    content_category: sec ? (series[sec.id] || sec.id) : ''
+  });
+});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=318825444943664&ev=PageView&noscript=1" alt=""></noscript>
+<!-- End Meta Pixel Code -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
@@ -201,6 +228,18 @@ a.btn-disabled:hover { border-color: #cfc9bc; color: #918c7d; }
 .praise .praise-label { display: block; font-weight: 700; font-size: 0.65rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--sig); margin-bottom: 0.2rem; }
 .card-cta.inline { margin-top: 0; margin-bottom: 1.2rem; }
 
+/* NETC: series ebook thumbnails */
+.ebook-row { max-width: 820px; margin: 2rem auto 0; }
+.ebook-row-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--sig); margin-bottom: 1rem; }
+.ebook-thumbs { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.ebook-thumb { background: #fff; box-shadow: 0 6px 22px rgba(0,0,0,0.1); display: flex; gap: 1rem; padding: 1rem; align-items: center; }
+.ebook-thumb img { width: 90px; aspect-ratio: 2/3; object-fit: cover; flex-shrink: 0; }
+.ebook-thumb .card-tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: var(--sig); margin-bottom: 0.2rem; }
+.ebook-thumb h4 { font-family: 'Bebas Neue', sans-serif; font-size: 1.35rem; letter-spacing: 0.5px; line-height: 1.05; margin-bottom: 0.3rem; }
+.ebook-thumb .price { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; margin-bottom: 0.5rem; }
+.ebook-thumb .btn { padding: 0.6rem 1.1rem; font-size: 0.72rem; }
+@media (max-width: 600px) { .ebook-thumbs { grid-template-columns: 1fr; } }
+
 /* 6. BUYING QUESTIONS */
 .faq { max-width: 1000px; margin: 0 auto; }
 .faq details { border-bottom: 1px solid rgba(0,0,0,0.12); padding: 1rem 0; }
@@ -316,6 +355,33 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
       </div>
     </div>
 
+  </div>
+
+  <div class="ebook-row">
+    <p class="ebook-row-label">Also in the Series &middot; E-books</p>
+    <div class="ebook-thumbs">
+      <div class="ebook-thumb">
+        <img src="/The-Critic-final-with.blurb.jpg" alt="The Critic cover">
+        <div>
+          <p class="card-tag">Book One &middot; E-book</p>
+          <h4>The Critic</h4>
+          <p class="price">$4.99</p>
+          <!-- BUY LINK: The Critic ebook ($4.99) -->
+          <a href="https://buy.stripe.com/fZubJ0fW2dvz6WZ49WbII0a" class="btn btn-solid" target="_blank" rel="noopener">Buy E-book</a>
+        </div>
+      </div>
+      <div class="ebook-thumb">
+        <img src="/SCC-BURN-COVER.jpg" alt="Steel City Burn cover">
+        <div>
+          <p class="card-tag">Prequel &middot; E-book</p>
+          <h4>Steel City Burn</h4>
+          <p class="price">$0.99</p>
+          <!-- BUY LINK: Steel City Burn ebook ($0.99) -->
+          <a href="https://buy.stripe.com/6oUeVcdNU0INepr21ObII0d" class="btn btn-solid" target="_blank" rel="noopener">Buy E-book</a>
+        </div>
+      </div>
+    </div>
+    <p class="checkout-note">Secure Stripe checkout &middot; Delivered by BookFunnel</p>
   </div>
 </section>
 
@@ -439,14 +505,14 @@ footer p { font-size: 0.75rem; color: rgba(245,242,235,0.4); letter-spacing: 0.0
   <div class="shop-grid small">
 
     <div class="shop-card">
-      <img class="cover" src="/Critic-with-blurb.jpg" alt="The Critic cover">
+      <img class="cover" src="/The-Critic-final-with.blurb.jpg" alt="The Critic cover">
       <div class="card-body">
         <h3>The Critic</h3>
         <p class="desc">He took her column. Then someone poisoned him. She didn't do it &mdash; she's pretty sure &mdash; but her mental health history has a way of making her doubt herself. And if she can't trust her own memory, how is she supposed to prove her innocence?</p>
         <p class="praise"><span class="praise-label">Praise for The Critic</span>&ldquo;red herrings galore, and nonstop &rsquo;90s nostalgia in this entertaining, clever thriller.&hellip; A bona fide win.&rdquo; &mdash;Jaime Lynn Hendricks, <em>Their Double Lives</em></p>
         <p class="price">$20 <span class="ship">+ $1 shipping</span></p>
         <div class="card-cta">
-          <!-- BUY LINK: The Critic signed paperback ($20 + $1 shipping) -->
+          <!-- BUY LINK: The Critic signed paperback -->
           <a href="https://buy.stripe.com/9B69ASeRY4Z34OR7m8bII0c" class="btn btn-solid" target="_blank" rel="noopener">Buy Signed Paperback</a>
           <p class="checkout-note">Secure Stripe checkout</p>
         </div>
